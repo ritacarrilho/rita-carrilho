@@ -1,0 +1,1016 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  font-family: "Raleway", sans-serif;
+  color: #393522;
+  background-color: #f7cf1e;
+  box-sizing: border-box;
+}
+
+html body .main-header {
+  background-color: #f7cf1e;
+}
+
+html body .main-header .nav-bar {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 0.75rem;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px -2px #e2a91a;
+}
+
+html body .main-header .nav-bar .menu-mobile-hamburguer,
+html body .main-header .nav-bar .menu-mobile-x,
+html body .main-header .nav-bar .navbar-contacts {
+  display: none;
+}
+
+html body .main-header .nav-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7cf1e;
+  color: #393522;
+  font-size: 1.5rem;
+}
+
+html body .main-header .nav-bar ul li {
+  list-style-type: none;
+  padding: 16px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+html body .main-header .nav-bar ul li a {
+  text-decoration: none;
+  color: #393522;
+}
+
+html body .main-header .nav-bar .navbar-logo {
+  font-family: "Fjalla One", sans-serif;
+  flex: 1;
+  font-size: 1.2rem;
+  user-select: none;
+  font-weight: 500;
+}
+
+html body .main-header .nav-bar .navbar-list {
+  position: relative;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+html body .main-header .nav-bar .navbar-list .navbar-item-a:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  right: 350px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0, 1, 1);
+  transform-origin: 0 50%;
+}
+
+html body .main-header .nav-bar .navbar-list .navbar-item-a:hover::before {
+  transform: scale3d(1, 1, 1);
+  background: white;
+  transform-origin: 100% 50%;
+  transform-origin: 0 50%;
+  transform: scale3d(1, 1, 1);
+}
+
+html body .main-header .menu-mobile {
+  display: none;
+}
+
+html body main {
+  overflow: hidden;
+}
+
+html body main #home {
+  max-height: 100vh;
+  width: 60vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  margin-top: 4.5px;
+  color: #393522;
+  font-size: 1.5rem;
+  background-color: #f7cf1e;
+}
+
+html body main #home .home-h1 {
+  padding-bottom: 16px;
+  padding-top: 160px;
+}
+
+html body main #home .home-h1 h1 {
+  font-size: 1rem;
+  display: block;
+}
+
+html body main #home .home-h2 {
+  padding-bottom: 11.2px;
+}
+
+html body main #home .home-h2 h2 {
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: white;
+}
+
+html body main #home .home-h3 {
+  padding-bottom: 22.4px;
+}
+
+html body main #home .home-h3 h3 {
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 3.3rem;
+  font-weight: 900;
+  color: #fdf3c9;
+}
+
+html body main #home .home-h4 {
+  padding-bottom: 19.2px;
+}
+
+html body main #home .home-h4 h4 {
+  letter-spacing: 0.05em;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #393522;
+}
+
+html body main #home .home-p {
+  padding-bottom: 48px;
+}
+
+html body main #home .home-p p {
+  font-size: 1rem;
+  max-width: 720px;
+  line-height: 1.9rem;
+}
+
+html body main #home .home-icons {
+  padding-bottom: 80px;
+}
+
+html body main #home .home-icons ul {
+  display: flex;
+}
+
+html body main #home .home-icons ul a {
+  padding-right: 16px;
+  font-size: 1.2rem;
+  color: #393522;
+  transition-duration: 0.1s;
+}
+
+html body main #home .home-icons ul a:hover {
+  color: #fdf3c9;
+}
+
+html body main #home .home-btn {
+  padding-top: 45px;
+}
+
+html body main #home .home-btn button {
+  font-size: 0.8rem;
+  color: #393522;
+  border: 2.24px solid #fdf3c9;
+  padding-top: 11.2px;
+  padding-bottom: 11.2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  background-color: #f7cf1e;
+  color: white;
+}
+
+html body main #home .home-btn button:hover {
+  color: #393522;
+  background-color: #fdf3c9;
+}
+
+html body main #about-me {
+  width: 60vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  min-height: 1100px;
+  display: flex;
+  background-color: #f5d547;
+  clip-path: polygon(0 1%, 100% 26%, 100% 100%, 0 100%);
+}
+
+html body main #about-me .about-info {
+  align-self: center;
+}
+
+html body main #about-me .about-info h2 {
+  font-size: 2.4rem;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  padding-bottom: 80px;
+  padding-top: 160px;
+}
+
+html body main #about-me .about-info .about-p {
+  font-size: 1rem;
+  padding-bottom: 20.8px;
+  line-height: 1.9rem;
+}
+
+html body main #about-me .about-info .about-p span {
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  text-decoration-style: wavy;
+}
+
+html body main #about-me .about-info #about-last-p {
+  padding-bottom: 64px;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  max-width: 640px;
+}
+
+html body main #about-me .about-info .skills-items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 48px;
+}
+
+html body main #about-me .about-info .skills-items .skills-table {
+  display: flex;
+  flex-direction: column;
+}
+
+html body main #about-me .about-info .skills-items .skills-table i {
+  font-size: 2.5rem;
+  padding-bottom: 16px;
+  align-self: center;
+  transition-duration: 0.1s;
+}
+
+html body main #about-me .about-info .skills-items .skills-table i:hover {
+  color: #fdf3c9;
+}
+
+html body main #about-me .about-info .skills-items .skills-table p {
+  font-size: 0.8rem;
+  align-self: center;
+}
+
+html body main #about-me .about-info #home-resume {
+  font-size: 0.8rem;
+  color: #393522;
+  border: 2.24px solid #fdf3c9;
+  padding-top: 11.2px;
+  padding-bottom: 11.2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  background-color: #f5d547;
+  margin-bottom: 80px;
+  color: white;
+  text-decoration: none;
+}
+
+html body main #about-me .about-info #home-resume:hover {
+  color: #393522;
+  background-color: #fdf3c9;
+}
+
+html body main #about-me .about-img {
+  padding-top: 240px;
+}
+
+html body main #about-me .about-img img {
+  max-width: 352px;
+  max-height: 352px;
+  opacity: 94%;
+  padding-top: 100px;
+}
+
+html body main #projects {
+  width: 60vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 112px;
+  background-color: white;
+  clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+  display: flex;
+  flex-direction: column;
+}
+
+html body main #projects h2 {
+  font-size: 2.4rem;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  padding-top: 80px;
+  color: #393522;
+  padding-bottom: 64px;
+}
+
+html body main #projects .project {
+  display: flex;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+html body main #projects .project .project-picture img {
+  max-width: 352px;
+  max-height: 352px;
+}
+
+html body main #projects .project .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 32px;
+}
+
+html body main #projects .project .project-info h4 {
+  font-size: 2.4rem;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  color: #f7cf1e;
+}
+
+html body main #projects .project .project-info p {
+  line-height: 1.9rem;
+}
+
+html body main #projects .project .project-info p span {
+  text-decoration-line: underline;
+  text-decoration-color: #f7cf1e;
+  text-decoration-style: wavy;
+}
+
+html body main #projects .project .project-info .project-tags button {
+  font-size: 0.8rem;
+  color: #393522;
+  border: 2.24px solid #fdf3c9;
+  padding-top: 11.2px;
+  padding-bottom: 11.2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  background-color: white;
+  border-color: #fdf3c9;
+  margin-right: 16px;
+}
+
+html body main #projects .project .project-info .project-tags button:hover {
+  background-color: #ffe573;
+  border-color: #ffe573;
+}
+
+html body main #projects .project .project-info .project-tags a {
+  text-decoration: none;
+  padding-left: 16px;
+}
+
+html body main #projects .project .project-info .project-tags a i {
+  font-size: 1.2rem;
+  padding-bottom: 16px;
+  align-self: center;
+  color: #f7cf1e;
+  transition-duration: 0.1s;
+}
+
+html body main #projects .project .project-info .project-tags a i:hover {
+  color: #393522;
+}
+
+html body main #other-projects {
+  width: 60vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 112px;
+}
+
+html body main #other-projects h2 {
+  font-size: 2.4rem;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+html body main #other-projects p {
+  font-size: 1rem;
+  padding-bottom: 16px;
+  line-height: 1.9rem;
+}
+
+html body main #other-projects p span {
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  text-decoration-style: wavy;
+}
+
+html body main #other-projects p #ay-filmes {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+html body main #other-projects p #ay-filmes:hover {
+  color: #393522;
+}
+
+html body main #other-projects #portfolio {
+  text-decoration: none;
+  text-decoration-line: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+html body main #other-projects #portfolio:hover {
+  color: #393522;
+}
+
+html body main #other-projects #cinema-portfolio-title {
+  margin-top: 64px;
+}
+
+html body main #other-projects .projects-skills {
+  display: flex;
+  max-width: 320px;
+  justify-content: space-between;
+  padding-top: 19.2px;
+}
+
+html body main #other-projects .projects-skills .cinema-icons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 19.2px;
+}
+
+html body main #other-projects .projects-skills .cinema-icons i {
+  align-self: center;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  transition-duration: 0.2s;
+}
+
+html body main #other-projects .projects-skills .cinema-icons i:hover {
+  color: #fdf3c9;
+}
+
+html body main #other-projects .projects-skills .cinema-icons p {
+  font-size: 0.8rem;
+}
+
+html body main #other-projects #portfolio {
+  font-size: 0.8rem;
+  color: #393522;
+  border: 2.24px solid #fdf3c9;
+  padding-top: 11.2px;
+  padding-bottom: 11.2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  background-color: transparent;
+  color: white;
+}
+
+html body main #other-projects #portfolio:hover {
+  color: #393522;
+  background-color: #fdf3c9;
+}
+
+html body main #other-projects #cinema-portfolio-title {
+  margin-top: 5rem;
+  font-size: 2.4rem;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  font-size: 1.7rem;
+  padding-bottom: 24px;
+}
+
+html body main #other-projects .cinema-projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+html body main #other-projects .cinema-projects .proj-cinema {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: white;
+  border: 0.8px solid #fdf3c9;
+  flex: 1;
+}
+
+html body main #other-projects .cinema-projects .proj-cinema h4 {
+  font-family: "Catamaran", sans-serif;
+  margin-top: 16px;
+  padding-bottom: 32px;
+  text-transform: uppercase;
+  color: #f7cf1e;
+}
+
+html body main #other-projects .cinema-projects .proj-cinema p {
+  padding-bottom: 6.4px;
+  font-size: 0.95rem;
+}
+
+html body main #other-projects .cinema-projects .proj-cinema p span {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+html body main #other-projects .cinema-projects .proj-cinema img {
+  max-width: 312px;
+  max-height: 320px;
+  opacity: 98%;
+  align-self: center;
+}
+
+html body main #other-projects .cinema-projects .proj-cinema .project-buttons,
+html body main #other-projects .cinema-projects .proj-cinema #proj-button {
+  font-size: 0.8rem;
+  color: #393522;
+  border: 2.24px solid #fdf3c9;
+  padding-top: 11.2px;
+  padding-bottom: 11.2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  margin-top: 32px;
+  background-color: white;
+  text-decoration: none;
+}
+
+html body main #other-projects .cinema-projects .proj-cinema #proj-button {
+  cursor: initial;
+}
+
+html body main #other-projects .cinema-projects .proj-cinema .project-buttons:hover {
+  background-color: #f5d547;
+  border-color: #f5d547;
+  color: #393522;
+}
+
+html body main #contacts {
+  position: fixed;
+  top: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  margin-left: 16px;
+  margin-right: 16px;
+  background: -webkit-linear-gradient(283deg, white 65%, #f5f5f5 35%);
+  z-index: 10;
+  overflow: scroll;
+}
+
+html body main #contacts .contact-close {
+  flex-grow: 0.3;
+  font-size: 2rem;
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 16px;
+}
+
+html body main #contacts p {
+  font-size: 2.4rem;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  color: #393522;
+  align-self: center;
+  font-size: 2.3rem;
+  max-width: 85vw;
+}
+
+html body main #contacts #sent-message {
+  font-size: 1.5rem;
+  align-self: center;
+  color: #2ecc71;
+  padding-top: 16px;
+}
+
+html body main #contacts .contact-form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+html body main #contacts .contact-form #form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-top: 48px;
+}
+
+html body main #contacts .contact-form #form #name-div,
+html body main #contacts .contact-form #form #email-div,
+html body main #contacts .contact-form #form #massage-div {
+  display: flex;
+  flex-direction: column;
+  min-width: 60vw;
+}
+
+html body main #contacts .contact-form #form #name-div label,
+html body main #contacts .contact-form #form #email-div label,
+html body main #contacts .contact-form #form #massage-div label {
+  font-size: 1.2rem;
+  padding-bottom: 8px;
+  padding-top: 19.2px;
+}
+
+html body main #contacts .contact-form #form #name-div input,
+html body main #contacts .contact-form #form #name-div textarea,
+html body main #contacts .contact-form #form #email-div input,
+html body main #contacts .contact-form #form #email-div textarea,
+html body main #contacts .contact-form #form #massage-div input,
+html body main #contacts .contact-form #form #massage-div textarea {
+  padding: 8px;
+  background-color: transparent;
+  display: block;
+  border: 1px solid #393522;
+}
+
+html body main #contacts .contact-form #form #name-div textarea,
+html body main #contacts .contact-form #form #email-div textarea,
+html body main #contacts .contact-form #form #massage-div textarea {
+  min-height: 150px;
+}
+
+html body main #contacts .contact-form #form #name-div input:focus,
+html body main #contacts .contact-form #form #name-div textarea:focus,
+html body main #contacts .contact-form #form #email-div input:focus,
+html body main #contacts .contact-form #form #email-div textarea:focus,
+html body main #contacts .contact-form #form #massage-div input:focus,
+html body main #contacts .contact-form #form #massage-div textarea:focus {
+  border: 1px solid #f7cf1e;
+}
+
+html body main #contacts .contact-form #form #name-div small,
+html body main #contacts .contact-form #form #email-div small,
+html body main #contacts .contact-form #form #massage-div small {
+  display: block;
+  visibility: hidden;
+  margin-top: 8px;
+}
+
+html body main #contacts .contact-form button {
+  font-size: 0.8rem;
+  color: #393522;
+  border: 2.24px solid #fdf3c9;
+  padding-top: 11.2px;
+  padding-bottom: 11.2px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  background-color: transparent;
+  border-color: #393522;
+  align-self: center;
+  max-width: 480px;
+}
+
+html body main #contacts .contact-form button:hover {
+  background-color: #f7cf1e;
+  color: white;
+  border-color: #f7cf1e;
+}
+
+html body main #contacts .contact-icons {
+  flex-grow: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 33.6px;
+}
+
+html body main #contacts .contact-icons h2 {
+  font-size: 1.2rem;
+  padding-bottom: 16px;
+}
+
+html body main #contacts .contact-icons ul {
+  display: flex;
+}
+
+html body main #contacts .contact-icons ul .icons-contacts a {
+  color: #393522;
+  cursor: pointer;
+  padding: 12.8px;
+  transition-duration: 0.1s;
+}
+
+html body main #contacts .contact-icons ul .icons-contacts a i {
+  font-size: 1.5rem;
+}
+
+html body main #contacts .contact-icons ul .icons-contacts a:hover {
+  color: #f7cf1e;
+}
+
+html body footer {
+  background-color: white;
+  clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8px;
+  padding-top: 48px;
+}
+
+html body footer .contacts-footer ul {
+  display: flex;
+}
+
+html body footer .contacts-footer a {
+  padding: 16px;
+  font-size: 1.3rem;
+  color: #393522;
+  transition-duration: 0.3s;
+}
+
+html body footer .contacts-footer a:hover {
+  color: #f7cf1e;
+}
+
+html body footer .footer-name {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+html body footer .footer-name span {
+  letter-spacing: 0.1rem;
+}
+
+html body .to-top-button {
+  position: fixed;
+  font-size: 3rem;
+  color: #fdf3c9;
+  bottom: 40px;
+  right: 60px;
+  width: 50px;
+}
+
+@media screen and (max-width: 396px) {
+  html body main #home .home-h1 {
+    padding-top: 100px !important;
+  }
+  html body main #home .home-h2 h2 {
+    font-size: 2.7rem !important;
+  }
+  html body main #home .home-h3 h3 {
+    font-size: 2.2rem !important;
+  }
+  html body main #home #connect-button {
+    padding-bottom: 40px;
+  }
+  html body #projects .project button {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  html body main #home .home-h1 {
+    padding-top: 100px !important;
+  }
+  html body main #home .home-h2 h2 {
+    font-size: 3rem !important;
+  }
+  html body main #home .home-h3 h3 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  html body main #span-1 {
+    font-size: 2.7rem;
+  }
+  html body main #about-me .about-info .skills-items {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  html body main #about-me .about-info .skills-items .skills-table {
+    padding-bottom: 16px;
+  }
+  html body main #about-me img {
+    width: 300px;
+  }
+  html body main #projects .project .project-picture img {
+    width: 250px;
+  }
+  html body main #other-projects .projects-skills {
+    flex-direction: column;
+    align-items: center;
+  }
+  html body main #contacts #sent-message {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  html body main #home {
+    height: 100%;
+    max-width: 80%;
+  }
+  html body main #home .home-icons {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  html body main #home .home-icons ul {
+    padding-bottom: 0;
+  }
+  html body main #home #connect-button {
+    padding-top: 32px;
+    margin-bottom: 40px;
+  }
+  html body main #home #connect-button button {
+    background-color: transparent;
+    z-index: 10;
+  }
+  html body main #about-me {
+    flex-wrap: wrap;
+  }
+  html body main #about-me .about-img {
+    padding-top: 0;
+  }
+  html body main #contacts p {
+    font-size: 1.5rem;
+  }
+  html body .to-top-button {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html body .main-header .nav-bar ul .menu-mobile-hamburguer {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  html body .main-header .nav-bar ul .navbar-list {
+    margin-top: 32px;
+    display: none;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    background-color: transparent;
+  }
+  html body .main-header .menu-mobile {
+    position: fixed;
+    top: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+    bottom: calc(90% - 16px);
+    background: -webkit-linear-gradient(283deg, white 65%, #f5f5f5 35%);
+    z-index: 10;
+  }
+  html body .main-header .menu-mobile .menu-mobile-close {
+    flex-grow: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 16px;
+    height: 32px;
+  }
+  html body .main-header .menu-mobile .mobile-menu-list {
+    flex-grow: 1;
+  }
+  html body .main-header .menu-mobile .mobile-menu-list ul {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3rem;
+    text-decoration: none;
+  }
+  html body .main-header .menu-mobile .mobile-menu-list ul li {
+    font-size: 1.1rem;
+    color: #393522;
+    text-transform: uppercase;
+  }
+  html body .main-header .menu-mobile .mobile-menu-list ul a {
+    text-decoration: none;
+    color: #393522;
+  }
+  html body .main-header .menu-mobile .mobile-menu-list ul a:hover {
+    color: #f7cf1e;
+  }
+  html body .main-header .menu-mobile .mobile-menu-icons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    padding-top: 33.6px;
+  }
+  html body .main-header .menu-mobile .mobile-menu-icons h2 {
+    font-size: 1rem;
+    padding-bottom: 16px;
+  }
+  html body .main-header .menu-mobile .mobile-menu-icons ul {
+    display: flex;
+  }
+  html body .main-header .menu-mobile .mobile-menu-icons ul .navbar-contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  html body .main-header .menu-mobile .mobile-menu-icons ul .navbar-contacts a {
+    color: #393522;
+    cursor: pointer;
+    padding: 12.8px;
+  }
+  html body .main-header .menu-mobile .mobile-menu-icons ul .navbar-contacts a:hover {
+    color: #f7cf1e;
+  }
+  html body main #about-me {
+    clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  html body main #about-me {
+    clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  html body main #about-me .about-img {
+    padding-top: 0;
+  }
+  html body main #about-me .about-img img {
+    padding-top: 10px;
+    padding-bottom: 32px;
+  }
+  html body main #projects .project {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  html body main #projects .project .project-info {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 1381px) {
+  html body .project-info .project-tags {
+    flex-wrap: wrap;
+  }
+  html body .project-info .project-tags i {
+    padding-top: 16px;
+  }
+}
+
+html body .active {
+  visibility: visible !important;
+  color: #e74c3c;
+}
+
+html body .hidden {
+  visibility: hidden;
+}
+
+html body .close-menu {
+  display: none !important;
+}
+
+html body .error {
+  border: none;
+  border: 1.6px solid #e74c3c !important;
+}
