@@ -7,4 +7,4 @@ One page static personal portfolio
 Project is created with:
 * HTML
 * SASS
-* Javascript
+* Typescript
