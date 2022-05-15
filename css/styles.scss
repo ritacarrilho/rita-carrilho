@@ -30,6 +30,7 @@ $text-uppercase: uppercase;
   padding-right: 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
+  // box-shadow: 5px 1px 19px 0px #4949020f;
 }
 
 @mixin titles {
@@ -39,9 +40,9 @@ $text-uppercase: uppercase;
 }
 
 @mixin layout {
-  width: 60vw;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  width: 66vw;
+  padding-left: 17vw;
+  padding-right: 17vw;
 }
 
 html {
@@ -94,11 +95,15 @@ html {
 
         .navbar-logo {
           font-family: "Fjalla One", sans-serif;
-          flex: 1;
-          font-size: 1.2rem;
+          flex: 1.2;
+          font-size: 1rem;
           user-select: none;
           font-weight: 500;
         }
+
+          .navbar-logo a:hover {
+            color: $light-yellow;
+          }
 
         .navbar-list {
           position: relative;
@@ -140,7 +145,7 @@ html {
     main {
       overflow: hidden;
 
-      //-----HOME PAGE-----//
+      //----- HOME -----//
       #home {
         max-height: 100vh;
         @include layout();
@@ -154,7 +159,7 @@ html {
           padding-top: 160px;
 
           h1 {
-            font-size: 1rem;
+            font-size: rem;
             display: block;
           }
         }
@@ -224,8 +229,6 @@ html {
         }
 
         .home-btn {
-          padding-top: 45px;
-
           button {
             @include buttons-homepage();
             background-color: $dark-yellow;
@@ -246,15 +249,16 @@ html {
         display: flex;
         background-color: $background-medium-yellow;
         clip-path: polygon(0 1%, 100% 26%, 100% 100%, 0 100%);
-        // margin-top: 56px;
+        padding-top: 185px;
+        flex-direction: column;
 
         .about-info {
-          align-self: center;
+          gap: 74px;
+          display: flex;
 
           h2 {
             @include titles();
             padding-bottom: 80px;
-            padding-top: 160px;
           }
 
           .about-p {
@@ -275,12 +279,21 @@ html {
             line-height: 1.9rem;
             max-width: 640px;
           }
+        }
 
           //----- Skills -----//
+         .about-info-skills {
+            .about-p {
+              font-size: 1rem;
+              padding-bottom: 20.8px;
+              line-height: 1.9rem;
+            }
+
           .skills-items {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 48px;
+            display: grid;
+            padding-bottom: 42px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 15px;
 
             .skills-table {
               display: flex;
@@ -301,8 +314,9 @@ html {
                 font-size: 0.8rem;
                 align-self: center;
               }
-            }
           }
+        }
+        
 
           #home-resume {
             @include buttons-homepage();
@@ -318,16 +332,12 @@ html {
           }
         }
 
-        .about-img {
-          padding-top: 240px;
-
           img {
             max-width: 352px;
             max-height: 352px;
             opacity: 94%;
-            padding-top: 100px;
           }
-        }
+        
       }
 
       //----- PROJECTS -----//
@@ -426,6 +436,10 @@ html {
           padding-top: 80px;
         }
 
+        h4 {
+          padding-top: 25px;
+        }
+
         p {
           font-size: 1rem;
           padding-bottom: 16px;
@@ -466,15 +480,18 @@ html {
         }
 
         .projects-skills {
-          display: flex;
-          max-width: 320px;
-          justify-content: space-between;
+          display: grid;
           padding-top: 19.2px;
+          padding-bottom: 42px;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 15px;
+          justify-items: start;
 
           .cinema-icons {
             display: flex;
             flex-direction: column;
             margin-bottom: 19.2px;
+            align-items: center;
 
             i {
               align-self: center;
@@ -512,9 +529,11 @@ html {
         }
 
         .cinema-projects {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
+          display: grid;
+          justify-content: start;
+          justify-items: center;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 35px;
 
           .proj-cinema {
             display: flex;
@@ -523,8 +542,8 @@ html {
             padding-top: 16px;
             padding-bottom: 16px;
             background-color: $white;
-            border: 0.8px solid $light-yellow;
-            flex: 1;
+            border-radius: 7px;
+            box-shadow: 10px 12px 13px 0px #4949021f;
 
             h4 {
               font-family: $titles-font;
@@ -535,7 +554,7 @@ html {
             }
 
             p {
-              padding-bottom: 6.4px;
+              padding-bottom: 0.1px;
               font-size: 0.95rem;
 
               span {
@@ -545,10 +564,12 @@ html {
             }
 
             img {
-              max-width: 312px;
-              max-height: 320px;
+              width: 95%;
+              height: auto;
               opacity: 98%;
               align-self: center;
+              border-radius: 4px;
+              opacity: 97%;
             }
 
             .project-buttons,
@@ -557,6 +578,7 @@ html {
               margin-top: 32px;
               background-color: $white;
               text-decoration: none;
+              box-shadow: 5px 1px 19px 0px #4949020f;
             }
 
             #proj-button {
@@ -819,11 +841,13 @@ html {
           font-size: 2.7rem;
         }
 
-        #about-me {
+        #about-me {              
           .about-info {
             .skills-items {
-              flex-wrap: wrap;
-              flex-direction: column;
+              display: grid;
+              padding-bottom: 42px;
+              grid-template-columns: repeat(5, 1fr);
+              grid-gap: 15px;
 
               .skills-table {
                 padding-bottom: 16px;

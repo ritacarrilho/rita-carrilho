@@ -125,11 +125,11 @@
           <h2 id="sapn-1">Rita Carrilho.</h2>
         </div>
         <div class="home-h3">
-          <h3 id="sapn-2">&lt;FrontEnd developer/&gt;</h3>
+          <h3 id="sapn-2">&lt;FullStack developer/&gt;</h3>
         </div>
-        <div class="home-h4">
+        <!-- <div class="home-h4">
           <h4>&lt;FullStack developer/&gt; in the making.</h4>
-        </div>
+        </div> -->
         <div class="home-p">
           <p id="p4">
             Currently finishing my studies, I like to code things for the web
@@ -175,6 +175,7 @@
       <!-- ABOUT ME -->
       <section id="about-me">
         <div class="about-info">
+          <div class="about-info-container">
           <h2>About Me.</h2>
           <p class="about-p">
             I am Rita and I'm a <span> Web Developer </span> based in Perpignan,
@@ -184,18 +185,23 @@
             In the midst of these unique times and driven by curiosity, I
             discovered <span>web development</span>. After some years working in
             Cinema I decided to shift my goals. Currently, I'm a
-            <span>Full-Stack student </span> at L'IDEM Creative Arts School.
+            <span>Full-Stack student </span> at L'IDEM Creative Arts School at Le Soler.
           </p>
           <p id="about-last-p">
             Attention to detail, problem solving & communication are some of my
             strenghts. I truly believe that good teamwork and challenges are the
             best way to grow.
           </p>
+        </div>
+        <div class="about-info-container">
+          <img src="images/Coding-amico-light.png" alt="" />
+        </div>
+        </div>
+        <!-- SKILLS -->
+        <div class="about-info-skills">
           <p class="about-p">
             Here are a few technologies I've been working with recently:
           </p>
-
-          <!-- SKILLS -->
           <div class="skills-items">
             <div class="skills-table">
               <i class="fab fa-html5"></i>
@@ -214,23 +220,61 @@
               <p>JavaScript</p>
             </div>
             <div class="skills-table">
-              <i class="fab fa-angular"></i>
-              <p>Angular</p>
+              <i><span class="iconify" data-icon="simple-icons:typescript"></span></i>
+              <p>Typecript</p>
             </div>
             <div class="skills-table">
               <i class="fab fa-bootstrap"></i>
               <p>Bootstrap</p>
             </div>
+            <div class="skills-table">
+              <i class="fab fa-php"></i>
+              <p>PHP</p>
+            </div>
+            <div class="skills-table">
+              <i><span class="iconify" data-icon="fontisto:mysql"></span></i>
+              <p>MySQL</p>
+            </div>
+            <div class="skills-table">
+              <i class="fab fa-docker"></i>
+              <p>Docker</p>
+            </div>
+            <div class="skills-table">
+              <i class="fab fa-git-alt"></i>
+              <p>Git</p>
+            </div>
           </div>
 
-          <a href="assets/CV_CarrilhoRita.pdf" target="_blank" id="home-resume">
-            Resume / &gt;</a
-          >
+          <p class="about-p">
+            And this are a few technologies I'll work with next:
+          </p>
+
+          <!-- NEXT SKILLS -->
+          <div class="skills-items">
+            <div class="skills-table">
+              <i class="fab fa-symfony"></i>
+              <p>Symfony</p>
+            </div>
+            <div class="skills-table">
+              <i class="fab fa-react"></i>
+              <p>React</p>
+            </div>
+            <div class="skills-table">
+              <i><span class="iconify" data-icon="file-icons:flutter"></span></i>
+              <p>Flutter</p>
+            </div>
+            <div class="skills-table">
+              <i class="fab fa-wordpress"></i>
+              <p>Wordpress</p>
+            </div>
+          </div>
+
+          <a href="assets/CV_CarrilhoRita.pdf" target="_blank" id="home-resume">Resume / &gt;</a>
         </div>
 
-        <div class="about-img">
+        <!-- <div class="about-img">
           <img src="images/Coding-amico-light.png" alt="" />
-        </div>
+        </div> -->
       </section>
 
       <!-- PROJECTS -->
@@ -328,20 +372,18 @@
         <p>Besides programming, I'm also passionate by <span>Cinema</span>.</p>
         <p>
           Over the years, I developed projects of the most varied genres for
-          <span>tv</span> and <span>cinema</span>, namely fiction, documentary,
-          experimental and series. I've collaborated with Portuguese, English
+          <span>tv</span> and <span>cinema</span>, namely fiction, documentary and
+          experimental. I've collaborated with Portuguese, English
           and German production companies.
         </p>
         <p>
           After my bachelor in Cinema, I've been developing projects with two
           friends. We named our collective
-          <a href="https://ayfilmes.pt/home" target="_blank" id="ay-filmes"
-            >Ay Filmes</a
-          >.
+          <a href="https://ayfilmes.pt/home" target="_blank" id="ay-filmes">Ay Filmes</a>.
         </p>
         <p>
           In 2017, I was nominated for <span>Best Cinematography</span> award
-          with the short film Fôlego in High Peak Independent Film Festival.
+          with the short film Fôlego by the High Peak Independent Film Festival.
         </p>
         <h4>Here are my skills in Cinema:</h4>
 
@@ -371,15 +413,32 @@
         <h4 id="cinema-portfolio-title">Some of my Film Projects.</h4>
 
         <div class="cinema-projects">
+
           <div class="proj-cinema">
-            <img src="images/still2.PNG" alt="" />
+            <img src="images/laranjeira.png" alt="" />
+            <h4>Flor de Laranjeira</h4>
+            <p><span>Producer:</span> Ay Filmes & Mocho Coxo</p>
+            <p><span>Director, writter & Editor:</span> Rúben Sevivas</p>
+            <p><span>Cinematographer:</span> Rita Carrilho</p>
+            <p><span>Sound Director:</span> João Araújo</p>
+            <!-- <p>20' | color | DOC | PT | 2022</p> -->
+            <button id="proj-button">In post-production / &gt;</button>
+          </div>
+
+          <div class="proj-cinema">
+            <img src="images/sobrevoo1.png" alt="" />
             <h4>Sobrevoo</h4>
             <p><span>Producer:</span> Ay Filmes</p>
             <p><span>Director, writter & Editor:</span> Rúben Sevivas</p>
             <p><span>Cinematographer & Colorist:</span> Rita Carrilho</p>
-            <p><span>Sound Mixer & Sound Designer:</span> João Araújo</p>
-            <p>9' | color | FIC | PT | 2021</p>
-            <button id="proj-button">In development / &gt;</button>
+            <p><span>Sound Director:</span> João Araújo</p>
+            <p>20'20'' | color | DOC/FIC | PT | 2021</p>
+            <a
+              href="https://vimeo.com/597197339"
+              target="_blank"
+              class="project-buttons"
+              >Watch trailer / &gt;
+            </a>
           </div>
 
           <div class="proj-cinema">
@@ -388,14 +447,14 @@
             <p><span>Producer:</span> Ay Filmes</p>
             <p><span>Director & Editor:</span> Rúben Sevivas</p>
             <p><span>Cinematographer & Colorist:</span> Rita Carrilho</p>
-            <p><span>Sound Mixer & Sound Designer:</span> João Araújo</p>
+            <p><span>Sound Director:</span> João Araújo</p>
             <p>9'10'' | color | DOC | PT | 2019</p>
             <a
               href="https://vimeo.com/409905929"
               target="_blank"
               class="project-buttons"
-              >Watch trailer / &gt;</a
-            >
+              >Watch trailer / &gt;
+            </a>
           </div>
 
           <div class="proj-cinema">
@@ -404,14 +463,14 @@
             <p><span>Producer:</span> UBI & Indieror</p>
             <p><span>Director, Writter & Editor:</span> Rúben Sevivas</p>
             <p><span>Cinematographer & Colorist:</span> Rita Carrilho</p>
-            <p><span>Sound Mixer & Sound Designer:</span> João Araújo</p>
+            <p><span>Sound Director:</span> João Araújo</p>
             <p>15' | color | FIC | PT | 2017</p>
             <a
               href="https://vimeo.com/215909193"
               target="_blank"
               class="project-buttons"
-              >Watch trailer / &gt;</a
-            >
+              >Watch trailer / &gt;
+              </a>
           </div>
         </div>
       </section>
@@ -425,8 +484,8 @@
         <p>Want to work together or just say hi?</p>
         <p>Drop me a line.</p>
         <span id="sent-message" class="hidden"
-          >Thank you! Your message was successfully sent!</span
-        >
+          >Thank you! Your message was successfully sent!
+        </span>
 
         <div class="contact-form">
           <form action="#" id="form">
@@ -520,7 +579,7 @@
       </div>
 
       <div class="footer-name">
-        <span>Rita Carrilho ©2021</span>
+        <span>Rita Carrilho &copy 2022</span>
       </div>
     </footer>
 
@@ -529,5 +588,6 @@
     </a>
 
     <script src="dist/main.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   </body>
 </html>
