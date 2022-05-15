@@ -24,19 +24,17 @@ $text-uppercase: uppercase;
   font-size: 0.8rem;
   color: $dark-grey;
   border: 2.24px solid $light-yellow;
-  padding-top: 11.2px;
-  padding-bottom: 11.2px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 11.2px 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
   // box-shadow: 5px 1px 19px 0px #4949020f;
 }
 
 @mixin titles {
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   font-family: $titles-font;
   color: $white;
+  // text-transform: uppercase;
 }
 
 @mixin layout {
@@ -153,9 +151,10 @@ html {
         color: $dark-grey;
         font-size: 1.5rem;
         background-color: $dark-yellow;
+        text-align: center;
 
         .home-h1 {
-          padding-bottom: 16px;
+          padding-bottom: 36px;
           padding-top: 160px;
 
           h1 {
@@ -165,7 +164,7 @@ html {
         }
 
         .home-h2 {
-          padding-bottom: 11.2px;
+          padding-bottom: 15px;
 
           h2 {
             font-family: $titles-font;
@@ -200,7 +199,10 @@ html {
         }
 
         .home-p {
-          padding-bottom: 48px;
+          padding-bottom: 26px;
+          vertical-align: middle;
+          display: flex;
+          justify-content: center;
 
           p {
             font-size: 1rem;
@@ -214,12 +216,13 @@ html {
 
           ul {
             display: flex;
+            justify-content: center;
 
             a {
               padding-right: 16px;
-              font-size: 1.2rem;
               color: $dark-grey;
               transition-duration: 0.1s;
+              font-size: 18px;
             }
 
             a:hover {
@@ -248,18 +251,30 @@ html {
         min-height: 1100px;
         display: flex;
         background-color: $background-medium-yellow;
-        clip-path: polygon(0 1%, 100% 26%, 100% 100%, 0 100%);
+        clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
         padding-top: 185px;
         flex-direction: column;
 
         .about-info {
           gap: 74px;
           display: flex;
+          align-items: center;
 
           h2 {
             @include titles();
-            padding-bottom: 80px;
+            padding-bottom: 45px;
+            // text-align: center;
           }
+
+          .about-info-container {
+            i {
+              padding-bottom: 50px;
+              text-align: center;
+              transform: rotate(126deg);
+              color: black;
+            }
+          }
+
 
           .about-p {
             font-size: 1rem;
@@ -283,17 +298,27 @@ html {
 
           //----- Skills -----//
          .about-info-skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            padding-top: 50px;
+
             .about-p {
-              font-size: 1rem;
-              padding-bottom: 20.8px;
+              font-size: 1.2rem;
               line-height: 1.9rem;
+              // text-transform: uppercase;
+              transition: color 300ms;
+              font-weight: 600;
             }
 
           .skills-items {
             display: grid;
             padding-bottom: 42px;
             grid-template-columns: repeat(5, 1fr);
-            grid-gap: 15px;
+            grid-gap: 21px;
+            width: 65%;
+          }
 
             .skills-table {
               display: flex;
@@ -301,7 +326,7 @@ html {
 
               i {
                 font-size: 2.5rem;
-                padding-bottom: 16px;
+                padding-bottom: 7px;
                 align-self: center;
                 transition-duration: 0.1s;
               }
@@ -314,30 +339,39 @@ html {
                 font-size: 0.8rem;
                 align-self: center;
               }
-          }
         }
         
+        .next-skills-items {
+          grid-template-columns: repeat(4, 1fr);
+          display: grid;
+          padding-bottom: 42px;
+          grid-gap: 40px;
+          width: 70%;
+        }
+      }
 
-          #home-resume {
-            @include buttons-homepage();
-            background-color: $background-medium-yellow;
-            margin-bottom: 80px;
-            color: $white;
-            text-decoration: none;
-          }
-
-          #home-resume:hover {
-            color: $dark-grey;
-            background-color: $light-yellow;
-          }
+      img {
+        max-width: 352px;
+        max-height: 352px;
+        opacity: 94%;
+        // padding-top: 60px;
+      }
+                  
+        #home-resume {
+          @include buttons-homepage();
+          background-color: $background-medium-yellow;
+          color: $white;
+          text-decoration: none;
+          margin-top: 40px;
+          width: 10%;
+          text-align: center;
+          align-self: center;
         }
 
-          img {
-            max-width: 352px;
-            max-height: 352px;
-            opacity: 94%;
-          }
-        
+        #home-resume:hover {
+          color: $dark-grey;
+          background-color: $light-yellow;
+        }
       }
 
       //----- PROJECTS -----//
@@ -353,7 +387,7 @@ html {
           @include titles();
           padding-top: 80px;
           color: $dark-grey;
-          padding-bottom: 64px;
+          padding-bottom: 35px;
         }
 
         .project {
@@ -364,8 +398,10 @@ html {
 
           .project-picture {
             img {
-              max-width: 352px;
-              max-height: 352px;
+              width: auto;
+              height: 250px;
+              border-radius: 7px 0px 0px 7px;
+              box-shadow: 2px 9px 13px 2px #4949021f;
             }
           }
 
@@ -374,6 +410,10 @@ html {
             flex-direction: column;
             justify-content: space-between;
             padding-left: 32px;
+            background-color: $light-grey;
+            border-radius: 0px 7px 7px 0px;
+            box-shadow:  5px 8px 13px 2px #4949021f;
+            padding-top: 29px;
 
             h4 {
               @include titles();
@@ -383,6 +423,7 @@ html {
 
             p {
               line-height: 1.9rem;
+              font-size: 0.9rem;
 
               span {
                 text-decoration-line: underline;
@@ -392,11 +433,10 @@ html {
             }
 
             .project-tags {
-              button {
-                @include buttons-homepage();
-                background-color: $white;
-                border-color: $light-yellow;
+              span {
                 margin-right: 16px;
+                font-size: 0.9rem;
+                font-weight: 600;
               }
 
               button:hover {
@@ -412,7 +452,7 @@ html {
                   font-size: 1.2rem;
                   padding-bottom: 16px;
                   align-self: center;
-                  color: $dark-yellow;
+                  color: $dark-grey;
                   transition-duration: 0.1s;
                 }
 
@@ -429,15 +469,21 @@ html {
       #other-projects {
         @include layout();
         padding-bottom: 112px;
+        text-align: center;
 
         h2 {
           @include titles();
-          padding-bottom: 80px;
+          padding-bottom: 55px;
           padding-top: 80px;
         }
 
         h4 {
-          padding-top: 25px;
+          padding-top: 39px;
+          padding-bottom: 20px;
+          font-size: 1.2rem;
+          line-height: 1.9rem;
+          font-weight: 600;
+          text-align: center;
         }
 
         p {
@@ -481,17 +527,17 @@ html {
 
         .projects-skills {
           display: grid;
-          padding-top: 19.2px;
           padding-bottom: 42px;
-          grid-template-columns: repeat(5, 1fr);
-          grid-gap: 15px;
-          justify-items: start;
+          grid-template-columns: repeat(3, 1fr);
+          padding-left: 20%;
+          padding-right: 20%;
 
           .cinema-icons {
             display: flex;
             flex-direction: column;
             margin-bottom: 19.2px;
             align-items: center;
+
 
             i {
               align-self: center;
@@ -509,18 +555,7 @@ html {
             }
           }
         }
-
-        #portfolio {
-          @include buttons-homepage();
-          background-color: transparent;
-          color: $white;
-        }
-
-        #portfolio:hover {
-          color: $dark-grey;
-          background-color: $light-yellow;
-        }
-
+        
         #cinema-portfolio-title {
           margin-top: 5rem;
           @include titles();
@@ -534,28 +569,29 @@ html {
           justify-items: center;
           grid-template-columns: repeat(2, 1fr);
           grid-gap: 35px;
+          margin-bottom: 83px;
 
           .proj-cinema {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 16px;
-            padding-bottom: 16px;
+            padding-bottom: 10px;
             background-color: $white;
             border-radius: 7px;
             box-shadow: 10px 12px 13px 0px #4949021f;
 
             h4 {
               font-family: $titles-font;
-              margin-top: 16px;
+              margin-top: 5px;
               padding-bottom: 32px;
               text-transform: uppercase;
               color: $dark-yellow;
+              padding-top: 16px;
             }
 
             p {
-              padding-bottom: 0.1px;
-              font-size: 0.95rem;
+              padding-bottom: 0px;
+              font-size: 0.9rem;
 
               span {
                 text-decoration: none;
@@ -564,11 +600,11 @@ html {
             }
 
             img {
-              width: 95%;
+              width: 100%;
               height: auto;
               opacity: 98%;
               align-self: center;
-              border-radius: 4px;
+              border-radius: 7px 7px 0px 0px;
               opacity: 97%;
             }
 
@@ -591,6 +627,17 @@ html {
               color: $dark-grey;
             }
           }
+        }
+
+        #portfolio {
+          @include buttons-homepage();
+          background-color: transparent;
+          color: $white;
+        }
+
+        #portfolio:hover {
+          color: $dark-grey;
+          background-color: $light-yellow;
         }
       }
 
