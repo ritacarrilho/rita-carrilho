@@ -27,6 +27,7 @@ $text-uppercase: uppercase;
   padding: 11.2px 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
+  font-weight: 600;
   // box-shadow: 5px 1px 19px 0px #4949020f;
 }
 
@@ -145,7 +146,7 @@ html {
 
       //----- HOME -----//
       #home {
-        max-height: 100vh;
+        // max-height: 100vh;
         @include layout();
         margin-top: 4.5px;
         color: $dark-grey;
@@ -248,7 +249,7 @@ html {
       //----- ABOUT ME-----//
       #about-me {
         @include layout();
-        min-height: 1100px;
+        // min-height: 1100px;
         display: flex;
         background-color: $background-medium-yellow;
         clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
@@ -363,9 +364,10 @@ html {
           color: $white;
           text-decoration: none;
           margin-top: 40px;
-          width: 10%;
+          // width: 10%;
           text-align: center;
           align-self: center;
+          margin-bottom: 50px;
         }
 
         #home-resume:hover {
@@ -391,15 +393,16 @@ html {
         }
 
         .project {
-          display: flex;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
           padding-bottom: 40px;
           padding-top: 40px;
           // flex-wrap: wrap;
 
           .project-picture {
             img {
-              width: auto;
-              height: 250px;
+              width: 100%;
+              height: auto;
               border-radius: 7px 0px 0px 7px;
               box-shadow: 2px 9px 13px 2px #4949021f;
             }
@@ -409,11 +412,11 @@ html {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding-left: 32px;
+            padding-left: 14px;
             background-color: $light-grey;
             border-radius: 0px 7px 7px 0px;
             box-shadow:  5px 8px 13px 2px #4949021f;
-            padding-top: 29px;
+            padding-top: 11px;
 
             h4 {
               @include titles();
@@ -879,6 +882,10 @@ html {
             }
           }
         }
+
+        .about-info {
+            width: 100%;
+        }
       }
     }
 
@@ -890,6 +897,7 @@ html {
 
         #about-me {              
           .about-info {
+            width: 100%;
             .skills-items {
               display: grid;
               padding-bottom: 42px;
@@ -910,15 +918,14 @@ html {
           .project {
             .project-picture {
               img {
-                width: 250px;
+                // width: 250px;
               }
             }
           }
         }
         #other-projects {
           .projects-skills {
-            flex-direction: column;
-            align-items: center;
+            grid-template-columns: repeat(1, 1fr);
           }
         }
 
@@ -956,7 +963,16 @@ html {
           }
         }
         #about-me {
-          flex-wrap: wrap;
+          .about-info-skills {
+            .about-p {
+              text-align: center;
+            }
+
+            .skills-items, .next-skills-items {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+
           .about-img {
             padding-top: 0;
           }
@@ -1093,37 +1109,80 @@ html {
         #about-me {
           clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
         }
+
+        #other-projects {
+          .cinema-projects {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
       }
     }
 
     @media screen and (max-width: 1220px) {
       main {
+        button {
+          width: auto;
+          
+        }
+        
         #about-me {
           clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
-          justify-content: center;
-          flex-wrap: wrap;
+          min-height: 1358px;
+          // justify-content: center;
 
-          .about-img {
-            padding-top: 0;
+          .about-info{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0px;
+            .image {
+              text-align: center;
 
-            img {
-              padding-top: 10px;
-              padding-bottom: 32px;
+              .about-img {
+                padding-top: 0;
+                align-self: center;
+
+                img {
+                  width: 70%;
+                }
+              }
             }
+
           }
         }
 
-        #projects {
-          .project {
-            flex-wrap: wrap;
-            justify-content: center;
-
-            .project-info {
-              padding-top: 32px;
-            }
+        #other-projects {
+          .projects-skills {
+            padding-left: 0px;
+            padding-right: 0px;
           }
         }
       }
+    }
+
+    @media screen and (max-width: 1282px) {
+      main {
+              #projects {
+        clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 96%);
+
+        .project {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+
+          .project-info {
+            padding-top: 32px;
+            border-radius: 0px 0px 7px 7px;
+          }
+
+          .project-picture {
+            img {
+              border-radius: 7px 7px 0px 0px;
+            }
+          }
+
+        }
+      }
+      }
+
     }
 
     @media screen and (max-width: 1381px) {
