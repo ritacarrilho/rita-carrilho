@@ -877,6 +877,12 @@ html {
           }
         }
       }
+
+      #other-projects {
+        .projects-skills {
+          padding-bottom: 0px;
+        }
+      }
     }
     }
 
@@ -1176,7 +1182,7 @@ html {
 
     @media screen and (max-width: 1282px) {
       main {
-              #projects {
+        #projects {
         clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 96%);
 
         .project {
@@ -1184,6 +1190,7 @@ html {
           grid-template-columns: repeat(1, 1fr);
 
           .project-info {
+            padding-right: 5px;
             padding-top: 32px;
             border-radius: 0px 0px 7px 7px;
           }

@@ -1030,6 +1030,9 @@ html body .to-top-button {
   html body main #projects .project button {
     margin-top: 16px;
   }
+  html body main #other-projects .projects-skills {
+    padding-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 510px) {
@@ -1304,6 +1307,7 @@ html body .to-top-button {
         grid-template-columns: repeat(1, 1fr);
   }
   html body main #projects .project .project-info {
+    padding-right: 5px;
     padding-top: 32px;
     border-radius: 0px 0px 7px 7px;
   }
