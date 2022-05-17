@@ -27,7 +27,6 @@ $text-uppercase: uppercase;
   padding: 11.2px 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
-  font-weight: 600;
   // box-shadow: 5px 1px 19px 0px #4949020f;
 }
 
@@ -854,6 +853,17 @@ html {
             padding-bottom: 40px;
           }
         }
+     
+      #about-me {
+        width: 100vw;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .about-info{
+          width: 80vw !important;
+          text-align: center;
+          padding-left: 10vw;
+        }
       }
 
       #projects {
@@ -863,6 +873,7 @@ html {
           }
         }
       }
+    }
     }
 
     @media screen and (max-width: 510px) {
