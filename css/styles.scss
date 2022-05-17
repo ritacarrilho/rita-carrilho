@@ -860,9 +860,13 @@ html {
         padding-right: 0px;
 
         .about-info{
-          width: 80vw !important;
+          width: 75vw !important;
           text-align: center;
           padding-left: 10vw;
+
+          #about-last-p {
+            padding-bottom: 15px;
+          }
         }
       }
 

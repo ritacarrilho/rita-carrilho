@@ -1020,9 +1020,12 @@ html body .to-top-button {
     padding-right: 0px;
   }
   html body main #about-me .about-info {
-    width: 80vw !important;
+    width: 75vw !important;
     text-align: center;
     padding-left: 10vw;
+  }
+  html body main #about-me .about-info #about-last-p {
+    padding-bottom: 15px;
   }
   html body main #projects .project button {
     margin-top: 16px;
