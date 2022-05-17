@@ -1027,6 +1027,9 @@ html body .to-top-button {
   html body main #about-me .about-info #about-last-p {
     padding-bottom: 15px;
   }
+  html body main #projects .project .project-info {
+    padding-right: 15px;
+  }
   html body main #projects .project button {
     margin-top: 16px;
   }
