@@ -376,6 +376,59 @@ html body main #about-me .about-info-skills .next-skills-items {
   width: 70%;
 }
 
+html body main #about-me .info-skills {
+  text-align: center;
+}
+
+html body main #about-me .info-skills .skills-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: stretch;
+  grid-gap: 13px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+html body main #about-me .info-skills .skills-cards .card {
+  background-color: white;
+  border-radius: 7px;
+  height: 196px;
+  width: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 9px 13px 2px #4949021f;
+          box-shadow: 2px 9px 13px 2px #4949021f;
+}
+
+html body main #about-me .info-skills .skills-cards .card img {
+  width: 85px;
+  padding-bottom: 20px;
+}
+
+html body main #about-me .info-skills .skills-cards .card h4 {
+  color: #393522;
+  font-weight: 800;
+}
+
 html body main #about-me img {
   max-width: 352px;
   max-height: 352px;
@@ -1110,6 +1163,11 @@ html body .to-top-button {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  html body main #about-me .about-info-skills .info-skills .skills-cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
   html body main #about-me .about-img {
     padding-top: 0;
   }
@@ -1291,6 +1349,11 @@ html body .to-top-button {
   }
   html body main #about-me .about-info .image .about-img img {
     width: 70%;
+  }
+  html body main #about-me .about-info-skills .skills-cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
   }
   html body main #other-projects .projects-skills {
     padding-left: 0px;
