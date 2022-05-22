@@ -381,6 +381,8 @@ html body main #about-me .info-skills {
 }
 
 html body main #about-me .info-skills .skills-cards {
+  margin-top: 30px;
+  margin-bottom: 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
