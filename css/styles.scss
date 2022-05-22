@@ -351,8 +351,6 @@ html {
       }
 
       .info-skills {
-        text-align: center;
-
         .skills-cards {
           margin-top: 30px;
           margin-bottom: 15px;
@@ -363,6 +361,7 @@ html {
           justify-items: stretch;
           grid-gap: 13px;
           align-content: center;
+          text-align: center;
 
           .card {
             background-color: white;
@@ -459,7 +458,7 @@ html {
             h4 {
               @include titles();
               font-size: 1.5rem;
-              color: $dark-yellow;
+              color: $dark-grey;
             }
 
             p {
@@ -626,7 +625,7 @@ html {
               margin-top: 5px;
               padding-bottom: 32px;
               text-transform: uppercase;
-              color: $dark-yellow;
+              // color: $dark-yellow;
               padding-top: 16px;
             }
 
