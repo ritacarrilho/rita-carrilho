@@ -699,10 +699,12 @@ html {
           $light-grey 35%
         );
         z-index: 10;
-        overflow: scroll;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: thin;
 
         .contact-close {
-          flex-grow: 0.3;
+          // flex-grow: 0.3;
           font-size: 2rem;
           cursor: pointer;
           align-self: flex-end;
@@ -713,6 +715,7 @@ html {
           @include titles();
           color: $dark-grey;
           align-self: center;
+          text-align: center;
           font-size: 2.3rem;
           max-width: 85vw;
         }
@@ -721,7 +724,7 @@ html {
           font-size: 1.5rem;
           align-self: center;
           color: #2ecc71;
-          padding-top: 16px;
+          padding-top: 5px;
         }
 
         .contact-form {
@@ -733,8 +736,8 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 32px;
-            margin-top: 48px;
+            margin-bottom: 5px;
+            margin-top: 5px;
 
             #name-div,
             #email-div,
@@ -746,7 +749,7 @@ html {
               label {
                 font-size: 1.2rem;
                 padding-bottom: 8px;
-                padding-top: 19.2px;
+                padding-top: 11.2px;
               }
 
               input,
@@ -793,7 +796,7 @@ html {
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding-top: 33.6px;
+          padding-top: 20px;
 
           h2 {
             font-size: 1.2rem;

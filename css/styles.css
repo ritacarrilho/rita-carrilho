@@ -571,7 +571,7 @@ html body main #projects .project .project-info .project-tags a i {
 }
 
 html body main #projects .project .project-info .project-tags a i:hover {
-  color: #393522;
+  color: #f7cf1e;
 }
 
 html body main #other-projects {
@@ -814,13 +814,12 @@ html body main #contacts {
   margin-right: 16px;
   background: -webkit-linear-gradient(283deg, white 65%, #f5f5f5 35%);
   z-index: 10;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
 }
 
 html body main #contacts .contact-close {
-  -webkit-box-flex: 0.3;
-      -ms-flex-positive: 0.3;
-          flex-grow: 0.3;
   font-size: 2rem;
   cursor: pointer;
   -ms-flex-item-align: end;
@@ -836,6 +835,7 @@ html body main #contacts p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-align: center;
   font-size: 2.3rem;
   max-width: 85vw;
 }
@@ -846,7 +846,7 @@ html body main #contacts #sent-message {
       -ms-grid-row-align: center;
       align-self: center;
   color: #2ecc71;
-  padding-top: 16px;
+  padding-top: 5px;
 }
 
 html body main #contacts .contact-form {
@@ -873,8 +873,8 @@ html body main #contacts .contact-form #form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 32px;
-  margin-top: 48px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 html body main #contacts .contact-form #form #name-div,
@@ -895,7 +895,7 @@ html body main #contacts .contact-form #form #email-div label,
 html body main #contacts .contact-form #form #massage-div label {
   font-size: 1.2rem;
   padding-bottom: 8px;
-  padding-top: 19.2px;
+  padding-top: 11.2px;
 }
 
 html body main #contacts .contact-form #form #name-div input,
@@ -969,7 +969,7 @@ html body main #contacts .contact-icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 33.6px;
+  padding-top: 20px;
 }
 
 html body main #contacts .contact-icons h2 {
