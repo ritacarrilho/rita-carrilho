@@ -6,5 +6,5 @@ One page static responsive personal portfolio
 ## Technologies:
 Project is created with:
 * HTML
-* SASS
+* SCSS
 * Typescript
