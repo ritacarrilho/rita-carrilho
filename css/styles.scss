@@ -1037,15 +1037,13 @@ html {
             .skills-items, .next-skills-items {
               grid-template-columns: repeat(3, 1fr);
             }          
-            
-            .info-skills {
-              .skills-cards {
-                grid-template-columns: repeat(1, 1fr);
-                grid-gap: 40px;
-              }   
-            }
           }
-
+          .info-skills {
+            .skills-cards {
+              grid-template-columns: repeat(1, 1fr) !important;
+              grid-gap: 40px;
+            }   
+          }
           .about-img {
             padding-top: 0;
           }       
@@ -1221,10 +1219,11 @@ html {
             }
           } 
 
-              .about-info-skills{
+              .info-skills{
                 .skills-cards {
                   grid-template-columns: repeat(2, 1fr);
                   grid-gap: 40px;
+                  justify-items: center;
                 }
               }
             

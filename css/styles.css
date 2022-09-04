@@ -4,66 +4,48 @@
 html {
   scroll-behavior: smooth;
 }
-
 html body {
   font-family: "Raleway", sans-serif;
   color: #393522;
   background-color: #f7cf1e;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 html body .main-header {
   background-color: #f7cf1e;
 }
-
 html body .main-header .nav-bar {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 0.75rem;
   border-radius: 2px;
-  -webkit-box-shadow: 0 2px 4px -2px #e2a91a;
-          box-shadow: 0 2px 4px -2px #e2a91a;
+  box-shadow: 0 2px 4px -2px #e2a91a;
 }
-
 html body .main-header .nav-bar .menu-mobile-hamburguer,
 html body .main-header .nav-bar .menu-mobile-x,
 html body .main-header .nav-bar .navbar-contacts {
   display: none;
 }
-
 html body .main-header .nav-bar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   background-color: #f7cf1e;
   color: #393522;
   font-size: 1.5rem;
 }
-
 html body .main-header .nav-bar ul li {
   list-style-type: none;
   padding: 16px;
   font-size: 0.85rem;
   text-transform: uppercase;
 }
-
 html body .main-header .nav-bar ul li a {
   text-decoration: none;
   color: #393522;
 }
-
 html body .main-header .nav-bar .navbar-logo {
   font-family: "Fjalla One", sans-serif;
-  -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
+  flex: 1.2;
   font-size: 1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -71,11 +53,9 @@ html body .main-header .nav-bar .navbar-logo {
           user-select: none;
   font-weight: 500;
 }
-
 html body .main-header .nav-bar .navbar-logo a:hover {
   color: #fdf3c9;
 }
-
 html body .main-header .nav-bar .navbar-list {
   position: relative;
   display: block;
@@ -84,7 +64,6 @@ html body .main-header .nav-bar .navbar-list {
   font-weight: 500;
   text-transform: uppercase;
 }
-
 html body .main-header .nav-bar .navbar-list .navbar-item-a:before {
   content: "";
   width: 100%;
@@ -94,35 +73,23 @@ html body .main-header .nav-bar .navbar-list .navbar-item-a:before {
   left: 0;
   bottom: 0;
   background: #fff;
-  -webkit-transition: 0.5s -webkit-transform ease;
-  transition: 0.5s -webkit-transform ease;
   transition: 0.5s transform ease;
-  transition: 0.5s transform ease, 0.5s -webkit-transform ease;
-  -webkit-transform: scale3d(0, 1, 1);
-          transform: scale3d(0, 1, 1);
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
+  transform: scale3d(0, 1, 1);
+  transform-origin: 0 50%;
 }
-
 html body .main-header .nav-bar .navbar-list .navbar-item-a:hover::before {
-  -webkit-transform: scale3d(1, 1, 1);
-          transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
   background: white;
-  -webkit-transform-origin: 100% 50%;
-          transform-origin: 100% 50%;
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
+  transform-origin: 100% 50%;
+  transform-origin: 0 50%;
   transform: scale3d(1, 1, 1);
 }
-
 html body .main-header .menu-mobile {
   display: none;
 }
-
 html body main {
   overflow: hidden;
 }
-
 html body main #home {
   width: 66vw;
   padding-left: 17vw;
@@ -133,21 +100,17 @@ html body main #home {
   background-color: #f7cf1e;
   text-align: center;
 }
-
 html body main #home .home-h1 {
   padding-bottom: 36px;
   padding-top: 160px;
 }
-
 html body main #home .home-h1 h1 {
   font-size: rem;
   display: block;
 }
-
 html body main #home .home-h2 {
   padding-bottom: 15px;
 }
-
 html body main #home .home-h2 h2 {
   font-family: "Catamaran", sans-serif;
   letter-spacing: 0.1em;
@@ -155,11 +118,9 @@ html body main #home .home-h2 h2 {
   font-weight: 900;
   color: white;
 }
-
 html body main #home .home-h3 {
   padding-bottom: 22.4px;
 }
-
 html body main #home .home-h3 h3 {
   font-family: "Catamaran", sans-serif;
   letter-spacing: 0.1em;
@@ -167,125 +128,89 @@ html body main #home .home-h3 h3 {
   font-weight: 900;
   color: #fdf3c9;
 }
-
 html body main #home .home-h4 {
   padding-bottom: 19.2px;
 }
-
 html body main #home .home-h4 h4 {
   letter-spacing: 0.05em;
   font-size: 1.5rem;
   font-weight: 200;
   color: #393522;
 }
-
 html body main #home .home-p {
   padding-bottom: 26px;
   vertical-align: middle;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 html body main #home .home-p p {
   font-size: 1rem;
   max-width: 720px;
   line-height: 1.9rem;
 }
-
 html body main #home .home-icons {
   padding-bottom: 80px;
 }
-
 html body main #home .home-icons ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 html body main #home .home-icons ul a {
   padding-right: 16px;
   color: #393522;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
   font-size: 18px;
 }
-
 html body main #home .home-icons ul a:hover {
   color: #fdf3c9;
 }
-
 html body main #home .home-btn button {
   font-size: 0.8rem;
   color: #393522;
   border: 2.24px solid #fdf3c9;
   padding: 11.2px 16px;
   text-transform: uppercase;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
   background-color: #f7cf1e;
   color: white;
 }
-
 html body main #home .home-btn button:hover {
   color: #393522;
   background-color: #fdf3c9;
 }
-
 html body main #about-me {
   width: 66vw;
   padding-left: 17vw;
   padding-right: 17vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #f5d547;
   -webkit-clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
           clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
   padding-top: 185px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 html body main #about-me .about-info {
   gap: 74px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 html body main #about-me .about-info h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
   color: white;
   padding-bottom: 45px;
 }
-
 html body main #about-me .about-info .about-info-container i {
   padding-bottom: 50px;
   text-align: center;
-  -webkit-transform: rotate(126deg);
-          transform: rotate(126deg);
+  transform: rotate(126deg);
   color: black;
 }
-
 html body main #about-me .about-info .about-p {
   font-size: 1rem;
   padding-bottom: 20.8px;
   line-height: 1.9rem;
 }
-
 html body main #about-me .about-info .about-p span {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -294,170 +219,112 @@ html body main #about-me .about-info .about-p span {
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy;
 }
-
 html body main #about-me .about-info #about-last-p {
   padding-bottom: 64px;
   font-size: 1rem;
   line-height: 1.9rem;
   max-width: 640px;
 }
-
 html body main #about-me .about-info-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 35px;
   padding-top: 50px;
 }
-
 html body main #about-me .about-info-skills .about-p {
   font-size: 1.2rem;
   line-height: 1.9rem;
-  -webkit-transition: color 300ms;
   transition: color 300ms;
   font-weight: 600;
 }
-
 html body main #about-me .about-info-skills .skills-items {
-  display: -ms-grid;
   display: grid;
   padding-bottom: 42px;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 21px;
   width: 65%;
 }
-
 html body main #about-me .about-info-skills .skills-table {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 html body main #about-me .about-info-skills .skills-table i {
   font-size: 2.5rem;
   padding-bottom: 7px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  align-self: center;
+  transition-duration: 0.1s;
 }
-
 html body main #about-me .about-info-skills .skills-table i:hover {
   color: #fdf3c9;
 }
-
 html body main #about-me .about-info-skills .skills-table p {
   font-size: 0.8rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 html body main #about-me .about-info-skills .next-skills-items {
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  display: -ms-grid;
+  grid-template-columns: repeat(4, 1fr);
   display: grid;
   padding-bottom: 42px;
   grid-gap: 40px;
   width: 70%;
 }
-
 html body main #about-me .info-skills .skills-cards {
   margin-top: 30px;
   margin-bottom: 15px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   justify-items: stretch;
   grid-gap: 13px;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
 }
-
 html body main #about-me .info-skills .skills-cards .card {
   background-color: white;
   border-radius: 7px;
   height: 196px;
   width: 222px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 2px 9px 13px 2px #4949021f;
-          box-shadow: 2px 9px 13px 2px #4949021f;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 9px 13px 2px rgba(73, 73, 2, 0.1215686275);
 }
-
 html body main #about-me .info-skills .skills-cards .card img {
   width: 85px;
   padding-bottom: 20px;
 }
-
 html body main #about-me .info-skills .skills-cards .card h4 {
   color: #393522;
   font-weight: 800;
 }
-
 html body main #about-me img {
   max-width: 352px;
   max-height: 352px;
   opacity: 94%;
 }
-
 html body main #about-me #home-resume {
   font-size: 0.8rem;
   color: #393522;
   border: 2.24px solid #fdf3c9;
   padding: 11.2px 16px;
   text-transform: uppercase;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
   background-color: #f5d547;
   color: white;
   text-decoration: none;
   margin-top: 40px;
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-bottom: 50px;
 }
-
 html body main #about-me #home-resume:hover {
   color: #393522;
   background-color: #fdf3c9;
 }
-
 html body main #projects {
   width: 66vw;
   padding-left: 17vw;
@@ -466,15 +333,9 @@ html body main #projects {
   background-color: white;
   -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
           clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 html body main #projects h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
@@ -483,44 +344,29 @@ html body main #projects h2 {
   color: #393522;
   padding-bottom: 35px;
 }
-
 html body main #projects .project {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding-bottom: 40px;
   padding-top: 40px;
 }
-
 html body main #projects .project .project-picture img {
   width: 100%;
   height: auto;
   border-radius: 7px 0px 0px 7px;
-  -webkit-box-shadow: 2px 9px 13px 2px #4949021f;
-          box-shadow: 2px 9px 13px 2px #4949021f;
+  box-shadow: 2px 9px 13px 2px rgba(73, 73, 2, 0.1215686275);
 }
-
 html body main #projects .project .project-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   padding-left: 14px;
   padding-right: 14px;
   background-color: #f5f5f5;
   border-radius: 0px 7px 7px 0px;
-  -webkit-box-shadow: 5px 8px 13px 2px #4949021f;
-          box-shadow: 5px 8px 13px 2px #4949021f;
+  box-shadow: 5px 8px 13px 2px rgba(73, 73, 2, 0.1215686275);
   padding-top: 11px;
 }
-
 html body main #projects .project .project-info h4 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
@@ -528,12 +374,10 @@ html body main #projects .project .project-info h4 {
   font-size: 1.5rem;
   color: #393522;
 }
-
 html body main #projects .project .project-info p {
   line-height: 1.9rem;
   font-size: 0.9rem;
 }
-
 html body main #projects .project .project-info p span {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -542,38 +386,29 @@ html body main #projects .project .project-info p span {
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy;
 }
-
 html body main #projects .project .project-info .project-tags span {
   margin-right: 16px;
   font-size: 0.9rem;
   font-weight: 600;
 }
-
 html body main #projects .project .project-info .project-tags button:hover {
   background-color: #ffe573;
   border-color: #ffe573;
 }
-
 html body main #projects .project .project-info .project-tags a {
   text-decoration: none;
   padding-left: 16px;
 }
-
 html body main #projects .project .project-info .project-tags a i {
   font-size: 1.2rem;
   padding-bottom: 16px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   color: #393522;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }
-
 html body main #projects .project .project-info .project-tags a i:hover {
   color: #f7cf1e;
 }
-
 html body main #other-projects {
   width: 66vw;
   padding-left: 17vw;
@@ -581,7 +416,6 @@ html body main #other-projects {
   padding-bottom: 112px;
   text-align: center;
 }
-
 html body main #other-projects h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
@@ -589,7 +423,6 @@ html body main #other-projects h2 {
   padding-bottom: 55px;
   padding-top: 80px;
 }
-
 html body main #other-projects h4 {
   padding-top: 39px;
   padding-bottom: 20px;
@@ -598,13 +431,11 @@ html body main #other-projects h4 {
   font-weight: 600;
   text-align: center;
 }
-
 html body main #other-projects p {
   font-size: 1rem;
   padding-bottom: 16px;
   line-height: 1.9rem;
 }
-
 html body main #other-projects p span {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -613,78 +444,54 @@ html body main #other-projects p span {
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy;
 }
-
 html body main #other-projects p #ay-filmes {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
 }
-
 html body main #other-projects p #ay-filmes:hover {
   color: #393522;
 }
-
 html body main #other-projects #portfolio {
   text-decoration: none;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   font-size: 1.3rem;
   cursor: pointer;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }
-
 html body main #other-projects #portfolio:hover {
   color: #393522;
 }
-
 html body main #other-projects #cinema-portfolio-title {
   margin-top: 64px;
 }
-
 html body main #other-projects .projects-skills {
-  display: -ms-grid;
   display: grid;
   padding-bottom: 42px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding-left: 20%;
   padding-right: 20%;
 }
-
 html body main #other-projects .projects-skills .cinema-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 19.2px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 html body main #other-projects .projects-skills .cinema-icons i {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   font-size: 1.8rem;
   margin-top: 10px;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
-
 html body main #other-projects .projects-skills .cinema-icons i:hover {
   color: #fdf3c9;
 }
-
 html body main #other-projects .projects-skills .cinema-icons p {
   font-size: 0.8rem;
 }
-
 html body main #other-projects #cinema-portfolio-title {
   margin-top: 5rem;
   font-size: 1.7rem;
@@ -693,38 +500,23 @@ html body main #other-projects #cinema-portfolio-title {
   font-size: 1.7rem;
   padding-bottom: 24px;
 }
-
 html body main #other-projects .cinema-projects {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: start;
   justify-items: center;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 35px;
   margin-bottom: 83px;
 }
-
 html body main #other-projects .cinema-projects .proj-cinema {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 10px;
   background-color: white;
   border-radius: 7px;
-  -webkit-box-shadow: 10px 12px 13px 0px #4949021f;
-          box-shadow: 10px 12px 13px 0px #4949021f;
+  box-shadow: 10px 12px 13px 0px rgba(73, 73, 2, 0.1215686275);
 }
-
 html body main #other-projects .cinema-projects .proj-cinema h4 {
   font-family: "Catamaran", sans-serif;
   margin-top: 5px;
@@ -732,28 +524,22 @@ html body main #other-projects .cinema-projects .proj-cinema h4 {
   text-transform: uppercase;
   padding-top: 16px;
 }
-
 html body main #other-projects .cinema-projects .proj-cinema p {
   padding-bottom: 0px;
   font-size: 0.9rem;
 }
-
 html body main #other-projects .cinema-projects .proj-cinema p span {
   text-decoration: none;
   font-weight: 600;
 }
-
 html body main #other-projects .cinema-projects .proj-cinema img {
   width: 100%;
   height: auto;
   opacity: 98%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   border-radius: 7px 7px 0px 0px;
   opacity: 97%;
 }
-
 html body main #other-projects .cinema-projects .proj-cinema .project-buttons,
 html body main #other-projects .cinema-projects .proj-cinema #proj-button {
   font-size: 0.8rem;
@@ -761,52 +547,39 @@ html body main #other-projects .cinema-projects .proj-cinema #proj-button {
   border: 2.24px solid #fdf3c9;
   padding: 11.2px 16px;
   text-transform: uppercase;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
   margin-top: 32px;
   background-color: white;
   text-decoration: none;
-  -webkit-box-shadow: 5px 1px 19px 0px #4949020f;
-          box-shadow: 5px 1px 19px 0px #4949020f;
+  box-shadow: 5px 1px 19px 0px rgba(73, 73, 2, 0.0588235294);
 }
-
 html body main #other-projects .cinema-projects .proj-cinema #proj-button {
   cursor: initial;
 }
-
 html body main #other-projects .cinema-projects .proj-cinema .project-buttons:hover {
   background-color: #f5d547;
   border-color: #f5d547;
   color: #393522;
 }
-
 html body main #other-projects #portfolio {
   font-size: 0.8rem;
   color: #393522;
   border: 2.24px solid #fdf3c9;
   padding: 11.2px 16px;
   text-transform: uppercase;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
   background-color: transparent;
   color: white;
 }
-
 html body main #other-projects #portfolio:hover {
   color: #393522;
   background-color: #fdf3c9;
 }
-
 html body main #contacts {
   position: fixed;
   top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: white;
   width: calc(100% - 32px);
   height: calc(100% - 32px);
@@ -818,78 +591,47 @@ html body main #contacts {
   overflow-x: hidden;
   scrollbar-width: thin;
 }
-
 html body main #contacts .contact-close {
   font-size: 2rem;
   cursor: pointer;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   padding: 16px;
 }
-
 html body main #contacts p {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
   color: white;
   color: #393522;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   text-align: center;
   font-size: 2.3rem;
   max-width: 85vw;
 }
-
 html body main #contacts #sent-message {
   font-size: 1.5rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   color: #2ecc71;
   padding-top: 5px;
 }
-
 html body main #contacts .contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-direction: column;
+  flex-grow: 1;
 }
-
 html body main #contacts .contact-form #form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 5px;
   margin-top: 5px;
 }
-
 html body main #contacts .contact-form #form #name-div,
 html body main #contacts .contact-form #form #email-div,
 html body main #contacts .contact-form #form #massage-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-width: 60vw;
 }
-
 html body main #contacts .contact-form #form #name-div label,
 html body main #contacts .contact-form #form #email-div label,
 html body main #contacts .contact-form #form #massage-div label {
@@ -897,7 +639,6 @@ html body main #contacts .contact-form #form #massage-div label {
   padding-bottom: 8px;
   padding-top: 11.2px;
 }
-
 html body main #contacts .contact-form #form #name-div input,
 html body main #contacts .contact-form #form #name-div textarea,
 html body main #contacts .contact-form #form #email-div input,
@@ -909,13 +650,11 @@ html body main #contacts .contact-form #form #massage-div textarea {
   display: block;
   border: 1px solid #393522;
 }
-
 html body main #contacts .contact-form #form #name-div textarea,
 html body main #contacts .contact-form #form #email-div textarea,
 html body main #contacts .contact-form #form #massage-div textarea {
   min-height: 150px;
 }
-
 html body main #contacts .contact-form #form #name-div input:focus,
 html body main #contacts .contact-form #form #name-div textarea:focus,
 html body main #contacts .contact-form #form #email-div input:focus,
@@ -924,7 +663,6 @@ html body main #contacts .contact-form #form #massage-div input:focus,
 html body main #contacts .contact-form #form #massage-div textarea:focus {
   border: 1px solid #f7cf1e;
 }
-
 html body main #contacts .contact-form #form #name-div small,
 html body main #contacts .contact-form #form #email-div small,
 html body main #contacts .contact-form #form #massage-div small {
@@ -932,118 +670,78 @@ html body main #contacts .contact-form #form #massage-div small {
   visibility: hidden;
   margin-top: 8px;
 }
-
 html body main #contacts .contact-form button {
   font-size: 0.8rem;
   color: #393522;
   border: 2.24px solid #fdf3c9;
   padding: 11.2px 16px;
   text-transform: uppercase;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
   background-color: transparent;
   border-color: #393522;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   max-width: 480px;
 }
-
 html body main #contacts .contact-form button:hover {
   background-color: #f7cf1e;
   color: white;
   border-color: #f7cf1e;
 }
-
 html body main #contacts .contact-icons {
-  -webkit-box-flex: 0.5;
-      -ms-flex-positive: 0.5;
-          flex-grow: 0.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 0.5;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 20px;
 }
-
 html body main #contacts .contact-icons h2 {
   font-size: 1.2rem;
   padding-bottom: 16px;
 }
-
 html body main #contacts .contact-icons ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 html body main #contacts .contact-icons ul .icons-contacts a {
   color: #393522;
   cursor: pointer;
   padding: 12.8px;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
+  transition-duration: 0.1s;
 }
-
 html body main #contacts .contact-icons ul .icons-contacts a i {
   font-size: 1.5rem;
 }
-
 html body main #contacts .contact-icons ul .icons-contacts a:hover {
   color: #f7cf1e;
 }
-
 html body footer {
   background-color: white;
   -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
           clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 8px;
   padding-top: 48px;
 }
-
 html body footer .contacts-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 html body footer .contacts-footer a {
   padding: 16px;
   font-size: 1.3rem;
   color: #393522;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-
 html body footer .contacts-footer a:hover {
   color: #f7cf1e;
 }
-
 html body footer .footer-name {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-
 html body footer .footer-name span {
   letter-spacing: 0.1rem;
 }
-
 html body .to-top-button {
   position: fixed;
   font-size: 3rem;
@@ -1052,7 +750,6 @@ html body .to-top-button {
   right: 60px;
   width: 50px;
 }
-
 @media screen and (max-width: 396px) {
   html body main #home .home-h1 {
     padding-top: 100px !important;
@@ -1089,7 +786,6 @@ html body .to-top-button {
     padding-bottom: 0px;
   }
 }
-
 @media screen and (max-width: 510px) {
   html body main #home .home-h1 {
     padding-top: 100px !important;
@@ -1104,7 +800,6 @@ html body .to-top-button {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 540px) {
   html body main #span-1 {
     font-size: 2.7rem;
@@ -1113,11 +808,9 @@ html body .to-top-button {
     width: 100%;
   }
   html body main #about-me .about-info .skills-items {
-    display: -ms-grid;
     display: grid;
     padding-bottom: 42px;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 15px;
   }
   html body main #about-me .about-info .skills-items .skills-table {
@@ -1127,14 +820,12 @@ html body .to-top-button {
     width: 300px;
   }
   html body main #other-projects .projects-skills {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   html body main #contacts #sent-message {
     font-size: 1rem;
   }
 }
-
 @media screen and (max-width: 750px) {
   html body main #home {
     height: 100%;
@@ -1159,12 +850,10 @@ html body .to-top-button {
     text-align: center;
   }
   html body main #about-me .about-info-skills .skills-items, html body main #about-me .about-info-skills .next-skills-items {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-  html body main #about-me .about-info-skills .info-skills .skills-cards {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+  html body main #about-me .info-skills .skills-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
     grid-gap: 40px;
   }
   html body main #about-me .about-img {
@@ -1177,7 +866,6 @@ html body .to-top-button {
     right: 10px;
   }
 }
-
 @media screen and (max-width: 850px) {
   html body .main-header .nav-bar ul .menu-mobile-hamburguer {
     display: block;
@@ -1195,22 +883,13 @@ html body .to-top-button {
   html body .main-header .menu-mobile {
     position: fixed;
     top: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     background-color: transparent;
     width: calc(100% - 32px);
     height: calc(100% - 32px);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin-left: 16px;
     margin-right: 16px;
     bottom: calc(90% - 16px);
@@ -1218,36 +897,22 @@ html body .to-top-button {
     z-index: 10;
   }
   html body .main-header .menu-mobile .menu-mobile-close {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
     font-size: 2rem;
     cursor: pointer;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
     padding: 16px;
     height: 32px;
   }
   html body .main-header .menu-mobile .mobile-menu-list {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    flex-grow: 1;
   }
   html body .main-header .menu-mobile .mobile-menu-list ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-color: transparent;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     line-height: 3rem;
     text-decoration: none;
   }
@@ -1264,19 +929,10 @@ html body .to-top-button {
     color: #f7cf1e;
   }
   html body .main-header .menu-mobile .mobile-menu-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
     padding-top: 33.6px;
   }
   html body .main-header .menu-mobile .mobile-menu-icons h2 {
@@ -1284,21 +940,12 @@ html body .to-top-button {
     padding-bottom: 16px;
   }
   html body .main-header .menu-mobile .mobile-menu-icons ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   html body .main-header .menu-mobile .mobile-menu-icons ul .navbar-contacts {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
     background-color: transparent;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -1316,11 +963,9 @@ html body .to-top-button {
             clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
   }
   html body main #other-projects .cinema-projects {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
-
 @media screen and (max-width: 1220px) {
   html body main button {
     width: auto;
@@ -1331,10 +976,8 @@ html body .to-top-button {
     min-height: 1358px;
   }
   html body main #about-me .about-info {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 0px;
   }
   html body main #about-me .about-info .image {
@@ -1342,34 +985,29 @@ html body .to-top-button {
   }
   html body main #about-me .about-info .image .about-img {
     padding-top: 0;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   html body main #about-me .about-info .image .about-img img {
     width: 70%;
   }
-  html body main #about-me .about-info-skills .skills-cards {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+  html body main #about-me .info-skills .skills-cards {
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
+    justify-items: center;
   }
   html body main #other-projects .projects-skills {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
-
 @media screen and (max-width: 1282px) {
   html body main #projects {
     -webkit-clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 96%);
             clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 96%);
   }
   html body main #projects .project {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   html body main #projects .project .project-info {
     padding-right: 5px;
@@ -1380,32 +1018,25 @@ html body .to-top-button {
     border-radius: 7px 7px 0px 0px;
   }
 }
-
 @media screen and (max-width: 1381px) {
   html body .project-info .project-tags {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   html body .project-info .project-tags i {
     padding-top: 16px;
   }
 }
-
 html body .active {
   visibility: visible !important;
   color: #e74c3c;
 }
-
 html body .hidden {
   visibility: hidden;
 }
-
 html body .close-menu {
   display: none !important;
 }
-
 html body .error {
   border: none;
   border: 1.6px solid #e74c3c !important;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
