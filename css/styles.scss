@@ -5,13 +5,30 @@
 // @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Otomanopee+One&display=swap");
 
 //-----COLORS-----//
-$dark-yellow: #f7cf1e;
-$medium-yellow: #ffe573;
-$background-medium-yellow: #f5d547;
+// $dark-yellow: #f8dc60;
+// $dark-yellow: #61b98d;
+$dark-yellow: #42b2be;
+$medium-yellow: #478a69;
+$background-medium-yellow: #ffeb94;
 $light-yellow: #fdf3c9;
 $white: white;
 $light-grey: #f5f5f5;
 $dark-grey: #393522;
+// $dark-yellow: #f8dc60;
+// $medium-yellow: #ffe573;
+// $background-medium-yellow: #ffeb94;
+// $light-yellow: #fdf3c9;
+// $white: white;
+// $light-grey: #f5f5f5;
+// $dark-grey: #393522;
+
+// $dark-yellow: #7F9183;
+// $medium-yellow: #ffe573;
+// $background-medium-yellow: #B8B8AA;
+// $light-yellow: #DDD5D0;
+// $dark-yellow: #64766A;
+// $background-medium-yellow: #F4F2F3;
+// $light-yellow: #fdf3c9;
 
 //-----FONTS-----//
 $primary-font: "Raleway", sans-serif;
@@ -33,7 +50,7 @@ $text-uppercase: uppercase;
 @mixin titles {
   font-size: 1.7rem;
   font-family: $titles-font;
-  color: $white;
+  color: $dark-yellow;
   // text-transform: uppercase;
 }
 
@@ -62,7 +79,7 @@ html {
         padding-right: 32px;
         padding-top: 0.75rem;
         border-radius: 2px;
-        box-shadow: 0 2px 4px -2px #e2a91a;
+        box-shadow: 0 2px 4px -2px #317880;
 
         .menu-mobile-hamburguer,
         .menu-mobile-x,
@@ -86,7 +103,7 @@ html {
 
             a {
               text-decoration: none;
-              color: $dark-grey;
+              color: $white;
             }
           }
         }
@@ -158,7 +175,7 @@ html {
           padding-top: 160px;
 
           h1 {
-            font-size: rem;
+            color: white;
             display: block;
           }
         }
@@ -208,6 +225,7 @@ html {
             font-size: 1rem;
             max-width: 720px;
             line-height: 1.9rem;
+            color: white;
           }
         }
 
@@ -220,13 +238,13 @@ html {
 
             a {
               padding-right: 16px;
-              color: $dark-grey;
+              color: $white;
               transition-duration: 0.1s;
               font-size: 18px;
             }
 
             a:hover {
-              color: $light-yellow;
+              color: $background-medium-yellow;
             }
           }
         }
@@ -235,7 +253,7 @@ html {
           button {
             @include buttons-homepage();
             background-color: $dark-yellow;
-            color: $white;
+            color: $light-yellow;
           }
 
           button:hover {
@@ -248,7 +266,6 @@ html {
       //----- ABOUT ME-----//
       #about-me {
         @include layout();
-        // min-height: 1100px;
         display: flex;
         background-color: $background-medium-yellow;
         clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
@@ -275,7 +292,6 @@ html {
             }
           }
 
-
           .about-p {
             font-size: 1rem;
             padding-bottom: 20.8px;
@@ -283,7 +299,7 @@ html {
 
             span {
               text-decoration-line: underline;
-              text-decoration-color: $white;
+              text-decoration-color: $dark-yellow;
               text-decoration-style: wavy;
             }
           }
@@ -296,98 +312,6 @@ html {
           }
         }
 
-          //----- Skills -----//
-         .about-info-skills {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 35px;
-            padding-top: 50px;
-
-            .about-p {
-              font-size: 1.2rem;
-              line-height: 1.9rem;
-              // text-transform: uppercase;
-              transition: color 300ms;
-              font-weight: 600;
-            }
-
-          .skills-items {
-            display: grid;
-            padding-bottom: 42px;
-            grid-template-columns: repeat(5, 1fr);
-            grid-gap: 21px;
-            width: 65%;
-          }
-
-            .skills-table {
-              display: flex;
-              flex-direction: column;
-
-              i {
-                font-size: 2.5rem;
-                padding-bottom: 7px;
-                align-self: center;
-                transition-duration: 0.1s;
-              }
-
-              i:hover {
-                color: $light-yellow;
-              }
-
-              p {
-                font-size: 0.8rem;
-                align-self: center;
-              }
-        }
-        
-        .next-skills-items {
-          grid-template-columns: repeat(4, 1fr);
-          display: grid;
-          padding-bottom: 42px;
-          grid-gap: 40px;
-          width: 70%;
-        }
-      }
-
-      .info-skills {
-        .skills-cards {
-          margin-top: 30px;
-          margin-bottom: 15px;
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          text-align: center;
-          align-items: center;
-          justify-items: stretch;
-          grid-gap: 13px;
-          align-content: center;
-          text-align: center;
-
-          .card {
-            background-color: white;
-            border-radius: 7px;
-            height: 196px;
-            width: 222px;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 2px 9px 13px 2px #4949021f;
-
-            img {
-              width: 85px;
-              padding-bottom: 20px;
-            }
-
-            h4 {
-              color: $dark-grey;
-              font-weight: 800;
-            }
-          }
-        }
-      }
-
       img {
         max-width: 352px;
         max-height: 352px;
@@ -397,8 +321,9 @@ html {
                   
         #home-resume {
           @include buttons-homepage();
+          border-color: $dark-yellow;
           background-color: $background-medium-yellow;
-          color: $white;
+          color: $dark-yellow;
           text-decoration: none;
           margin-top: 40px;
           // width: 10%;
@@ -408,25 +333,59 @@ html {
         }
 
         #home-resume:hover {
-          color: $dark-grey;
-          background-color: $light-yellow;
+          color: $white;
+          background-color: $dark-yellow;
         }
       }
 
       //----- PROJECTS -----//
       #projects {
         @include layout();
-        padding-bottom: 112px;
+        padding-bottom: 120px;
         background-color: $white;
-        clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+        clip-path: polygon(50% 100%, 100% 98%, 100% 0, 0 0, 0 98%);
         display: flex;
         flex-direction: column;
 
         h2 {
           @include titles();
           padding-top: 80px;
-          color: $dark-grey;
+          color: $dark-yellow;
           padding-bottom: 35px;
+        }
+
+        .grid-a {
+          order: -1;
+        }
+
+        .grid-b {
+          order: 1;
+        }
+
+        .project-a {
+          .project-picture {
+            img {
+              border-radius: 7px 0px 0px 7px;
+              box-shadow: 2px 9px 13px 2px #4949021f;
+            }
+          }
+          .project-info {
+            border-radius: 0px 7px 7px 0px;
+            box-shadow:  5px 8px 13px 2px #4949021f;
+          }
+        }
+
+        .project-b {
+          .project-picture {
+            img {
+              border-radius: 0px 7px 7px 0px;
+              box-shadow:  5px 8px 13px 2px #4949021f;
+            }
+          }
+          .project-info {
+            border-radius: 7px 0px 0px 7px;
+            box-shadow: 2px 9px 13px 2px #4949021f;
+          }
         }
 
         .project {
@@ -435,13 +394,11 @@ html {
           padding-bottom: 40px;
           padding-top: 40px;
           // flex-wrap: wrap;
-
           .project-picture {
             img {
               width: 100%;
-              height: auto;
-              border-radius: 7px 0px 0px 7px;
-              box-shadow: 2px 9px 13px 2px #4949021f;
+              height: 100%;
+              object-fit: cover;
             }
           }
 
@@ -452,8 +409,6 @@ html {
             padding-left: 14px;
             padding-right: 14px;
             background-color: $light-grey;
-            border-radius: 0px 7px 7px 0px;
-            box-shadow:  5px 8px 13px 2px #4949021f;
             padding-top: 11px;
 
             h4 {
@@ -498,7 +453,7 @@ html {
                 }
 
                 i:hover {
-                  color: $dark-yellow;
+                  color: $background-medium-yellow;
                 }
               }
             }
@@ -506,85 +461,85 @@ html {
         }
       }
 
-      //----- Other Projects -----//
-      #other-projects {
-        @include layout();
-        padding-bottom: 112px;
-        text-align: center;
-
-        h2 {
-          @include titles();
-          padding-bottom: 55px;
-          padding-top: 80px;
-        }
-
-        h4 {
-          padding-top: 39px;
-          padding-bottom: 20px;
-          font-size: 1.2rem;
-          line-height: 1.9rem;
-          font-weight: 600;
-          text-align: center;
-        }
-
-        p {
-          font-size: 1rem;
-          padding-bottom: 16px;
-          line-height: 1.9rem;
-
-          span {
-            text-decoration-line: underline;
-            text-decoration-color: $white;
-            text-decoration-style: wavy;
+      //----- Skills -----//
+      #skills{
+      padding-top: 60px;
+      @include layout();
+        .info-skills {
+          margin-bottom: 20px;
+          h2 {
+            @include titles();
+            padding-bottom: 20px;
+            // text-align: center;
           }
+          .skills-cards {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+            align-items: center;
+            justify-items: stretch;
+            grid-gap: 13px;
+            align-content: center;
+            text-align: center;
 
-          #ay-filmes {
-            text-decoration: none;
-            color: $white;
+            .card {
+              background-color: white;
+              border-radius: 7px;
+              height: 196px;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-content: center;
+              justify-content: center;
+              align-items: center;
+              box-shadow: 2px 9px 13px 2px #4949021f;
+
+              img {
+                width: 85px;
+                padding-bottom: 20px;
+              }
+
+              h4 {
+                color: $dark-grey;
+                font-weight: 800;
+              }
+            }
+          }
+        }
+        .about-info-skills {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 35px;
+          padding-top: 50px;
+
+          .about-p {
             font-size: 1.2rem;
+            line-height: 1.9rem;
+            // text-transform: uppercase;
+            transition: color 300ms;
             font-weight: 600;
           }
 
-          #ay-filmes:hover {
-            color: $dark-grey;
+          .skills-items {
+            display: grid;
+            padding-bottom: 42px;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 21px;
+            width: 100%;
           }
-        }
 
-        #portfolio {
-          text-decoration: none;
-          text-decoration-line: none;
-          font-size: 1.3rem;
-          cursor: pointer;
-          transition-duration: 0.1s;
-        }
-
-        #portfolio:hover {
-          color: $dark-grey;
-        }
-
-        #cinema-portfolio-title {
-          margin-top: 64px;
-        }
-
-        .projects-skills {
-          display: grid;
-          padding-bottom: 42px;
-          grid-template-columns: repeat(3, 1fr);
-          padding-left: 20%;
-          padding-right: 20%;
-
-          .cinema-icons {
+          .skills-table {
             display: flex;
             flex-direction: column;
-            margin-bottom: 19.2px;
-            align-items: center;
-
 
             i {
+              font-size: 2.5rem;
+              padding-bottom: 7px;
               align-self: center;
-              font-size: 1.8rem;
-              margin-top: 10px;
-              transition-duration: 0.2s;
+              transition-duration: 0.1s;
             }
 
             i:hover {
@@ -593,95 +548,12 @@ html {
 
             p {
               font-size: 0.8rem;
-            }
-          }
-        }
-        
-        #cinema-portfolio-title {
-          margin-top: 5rem;
-          @include titles();
-          font-size: 1.7rem;
-          padding-bottom: 24px;
-        }
-
-        .cinema-projects {
-          display: grid;
-          justify-content: start;
-          justify-items: center;
-          grid-template-columns: repeat(2, 1fr);
-          grid-gap: 35px;
-          margin-bottom: 83px;
-
-          .proj-cinema {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 10px;
-            background-color: $white;
-            border-radius: 7px;
-            box-shadow: 10px 12px 13px 0px #4949021f;
-
-            h4 {
-              font-family: $titles-font;
-              margin-top: 5px;
-              padding-bottom: 32px;
-              text-transform: uppercase;
-              // color: $dark-yellow;
-              padding-top: 16px;
-            }
-
-            p {
-              padding-bottom: 0px;
-              font-size: 0.9rem;
-
-              span {
-                text-decoration: none;
-                font-weight: 600;
-              }
-            }
-
-            img {
-              width: 100%;
-              height: auto;
-              opacity: 98%;
               align-self: center;
-              border-radius: 7px 7px 0px 0px;
-              opacity: 97%;
-            }
-
-            .project-buttons,
-            #proj-button {
-              @include buttons-homepage();
-              margin-top: 32px;
-              background-color: $white;
-              text-decoration: none;
-              box-shadow: 5px 1px 19px 0px #4949020f;
-            }
-
-            #proj-button {
-              cursor: initial;
-            }
-
-            .project-buttons:hover {
-              background-color: $background-medium-yellow;
-              border-color: $background-medium-yellow;
-              color: $dark-grey;
             }
           }
-        }
-
-        #portfolio {
-          @include buttons-homepage();
-          background-color: transparent;
-          color: $white;
-        }
-
-        #portfolio:hover {
-          color: $dark-grey;
-          background-color: $light-yellow;
         }
       }
-
+      
       //----- CONTACTS-----//
       #contacts {
         position: fixed;
@@ -699,7 +571,6 @@ html {
           $light-grey 35%
         );
         z-index: 10;
-        overflow-y: scroll;
         overflow-x: hidden;
         scrollbar-width: thin;
 
@@ -850,7 +721,7 @@ html {
         }
 
         a:hover {
-          color: $dark-yellow;
+          color: $background-medium-yellow;
         }
       }
 
@@ -952,6 +823,10 @@ html {
         .about-info {
             width: 100%;
         }
+      
+        #projects {
+          clip-path: polygon(50% 100%, 100% 99%, 100% 0, 0 0, 0 99%) !important;
+        }
       }
     }
 
@@ -964,40 +839,33 @@ html {
         #about-me {              
           .about-info {
             width: 100%;
-            .skills-items {
-              display: grid;
-              padding-bottom: 42px;
-              grid-template-columns: repeat(5, 1fr);
-              grid-gap: 15px;
-
-              .skills-table {
-                padding-bottom: 16px;
-              }
-            }
           }
           img {
             width: 300px;
           }
         }
 
-        // #projects {
-        //   .project {
-        //     .project-picture {
-        //       img {
-        //         // width: 250px;
-        //       }
-        //     }
-        //   }
-        // }
-        #other-projects {
-          .projects-skills {
-            grid-template-columns: repeat(1, 1fr);
-          }
-        }
-
         #contacts {
           #sent-message {
             font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      main {
+        #skills {
+          .about-info-skills {
+            .skills-items {
+              padding-bottom: 42px;
+              grid-template-columns: repeat(3, 1fr) !important;
+              grid-gap: 15px;
+
+              .skills-table {
+                padding-bottom: 16px;
+              }
+            }
           }
         }
       }
@@ -1028,33 +896,15 @@ html {
             }
           }
         }
-        #about-me {
-          .about-info-skills {
-            .about-p {
-              text-align: center;
-            }
-
-            .skills-items, .next-skills-items {
-              grid-template-columns: repeat(3, 1fr);
-            }          
-          }
-          .info-skills {
-            .skills-cards {
-              grid-template-columns: repeat(1, 1fr) !important;
-              grid-gap: 40px;
-            }   
-          }
-          .about-img {
-            padding-top: 0;
-          }       
-        }
 
         #contacts {
           p {
             font-size: 1.5rem;
           }
         }
+      
       }
+
       .to-top-button {
         right: 10px;
       }
@@ -1068,6 +918,7 @@ html {
               display: block;
               font-size: 1.5rem;
               cursor: pointer;
+              color: $white;
             }
 
             .navbar-list {
@@ -1180,11 +1031,58 @@ html {
         #about-me {
           clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
         }
-
-        #other-projects {
-          .cinema-projects {
-            grid-template-columns: repeat(1, 1fr);
+      
+        #projects {
+          clip-path: polygon(50% 100%, 100% 98%, 100% 0, 0 0, 0 98%);
+          .project-b {
+            .project-picture {
+              order: -1;
+              img {
+                border-radius: 7px 0px 0px 7px;
+                box-shadow: 2px 9px 13px 2px #4949021f;
+              }
+            }
+            .project-info {
+              order: 1;
+              border-radius: 0px 7px 7px 0px;
+              box-shadow:  5px 8px 13px 2px #4949021f;
+            }
           }
+          .project {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+    
+            .project-info {
+              padding-right: 5px;
+              padding-top: 32px;
+              border-radius: 0px 0px 7px 7px;
+            }
+    
+            .project-picture {
+              img {
+                border-radius: 7px 7px 0px 0px;
+              }
+            }
+    
+          }
+        }
+
+        #skills {
+          .info-skills {
+            .skills-cards {
+              grid-template-columns: repeat(1, 1fr) !important;
+              grid-gap: 40px;
+            }   
+          }
+          .about-info-skills {
+            .about-p {
+              text-align: center;
+            }
+
+            .skills-items {
+              grid-template-columns: repeat(5, 1fr);
+            }          
+          }    
         }
       }
     }
@@ -1197,8 +1095,6 @@ html {
 
         #about-me {
           clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
-          min-height: 1358px;
-          // justify-content: center;
 
           .about-info{
             display: grid;
@@ -1218,51 +1114,17 @@ html {
               }
             }
           } 
-
-              .info-skills{
-                .skills-cards {
-                  grid-template-columns: repeat(2, 1fr);
-                  grid-gap: 40px;
-                  justify-items: center;
-                }
-              }
-            
         }
-
-        #other-projects {
-          .projects-skills {
-            padding-left: 0px;
-            padding-right: 0px;
-          }
-        }
-      }
-    }
-
-    @media screen and (max-width: 1282px) {
-      main {
-        #projects {
-        clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 96%);
-
-        .project {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-
-          .project-info {
-            padding-right: 5px;
-            padding-top: 32px;
-            border-radius: 0px 0px 7px 7px;
-          }
-
-          .project-picture {
-            img {
-              border-radius: 7px 7px 0px 0px;
+        #skills {
+          .info-skills{
+            .skills-cards {
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 25px;
+              justify-items: center;
             }
-          }
-
+          } 
         }
       }
-      }
-
     }
 
     @media screen and (max-width: 1381px) {
@@ -1276,7 +1138,7 @@ html {
       }
     }
 
-    //-----CLASSES-----//
+  //-----CLASSES-----//
     .active {
       visibility: visible !important;
       color: #e74c3c;

@@ -7,18 +7,18 @@ html {
 html body {
   font-family: "Raleway", sans-serif;
   color: #393522;
-  background-color: #f7cf1e;
+  background-color: #42b2be;
   box-sizing: border-box;
 }
 html body .main-header {
-  background-color: #f7cf1e;
+  background-color: #42b2be;
 }
 html body .main-header .nav-bar {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 0.75rem;
   border-radius: 2px;
-  box-shadow: 0 2px 4px -2px #e2a91a;
+  box-shadow: 0 2px 4px -2px #317880;
 }
 html body .main-header .nav-bar .menu-mobile-hamburguer,
 html body .main-header .nav-bar .menu-mobile-x,
@@ -29,7 +29,7 @@ html body .main-header .nav-bar ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f7cf1e;
+  background-color: #42b2be;
   color: #393522;
   font-size: 1.5rem;
 }
@@ -41,7 +41,7 @@ html body .main-header .nav-bar ul li {
 }
 html body .main-header .nav-bar ul li a {
   text-decoration: none;
-  color: #393522;
+  color: white;
 }
 html body .main-header .nav-bar .navbar-logo {
   font-family: "Fjalla One", sans-serif;
@@ -49,7 +49,6 @@ html body .main-header .nav-bar .navbar-logo {
   font-size: 1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   font-weight: 500;
 }
@@ -97,7 +96,7 @@ html body main #home {
   margin-top: 4.5px;
   color: #393522;
   font-size: 1.5rem;
-  background-color: #f7cf1e;
+  background-color: #42b2be;
   text-align: center;
 }
 html body main #home .home-h1 {
@@ -105,7 +104,7 @@ html body main #home .home-h1 {
   padding-top: 160px;
 }
 html body main #home .home-h1 h1 {
-  font-size: rem;
+  color: white;
   display: block;
 }
 html body main #home .home-h2 {
@@ -147,6 +146,7 @@ html body main #home .home-p p {
   font-size: 1rem;
   max-width: 720px;
   line-height: 1.9rem;
+  color: white;
 }
 html body main #home .home-icons {
   padding-bottom: 80px;
@@ -157,12 +157,12 @@ html body main #home .home-icons ul {
 }
 html body main #home .home-icons ul a {
   padding-right: 16px;
-  color: #393522;
+  color: white;
   transition-duration: 0.1s;
   font-size: 18px;
 }
 html body main #home .home-icons ul a:hover {
-  color: #fdf3c9;
+  color: #ffeb94;
 }
 html body main #home .home-btn button {
   font-size: 0.8rem;
@@ -171,8 +171,8 @@ html body main #home .home-btn button {
   padding: 11.2px 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
-  background-color: #f7cf1e;
-  color: white;
+  background-color: #42b2be;
+  color: #fdf3c9;
 }
 html body main #home .home-btn button:hover {
   color: #393522;
@@ -183,7 +183,7 @@ html body main #about-me {
   padding-left: 17vw;
   padding-right: 17vw;
   display: flex;
-  background-color: #f5d547;
+  background-color: #ffeb94;
   -webkit-clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
           clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
   padding-top: 185px;
@@ -197,7 +197,7 @@ html body main #about-me .about-info {
 html body main #about-me .about-info h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: white;
+  color: #42b2be;
   padding-bottom: 45px;
 }
 html body main #about-me .about-info .about-info-container i {
@@ -212,94 +212,15 @@ html body main #about-me .about-info .about-p {
   line-height: 1.9rem;
 }
 html body main #about-me .about-info .about-p span {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: #42b2be;
+  text-decoration-style: wavy;
 }
 html body main #about-me .about-info #about-last-p {
   padding-bottom: 64px;
   font-size: 1rem;
   line-height: 1.9rem;
   max-width: 640px;
-}
-html body main #about-me .about-info-skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px;
-  padding-top: 50px;
-}
-html body main #about-me .about-info-skills .about-p {
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  transition: color 300ms;
-  font-weight: 600;
-}
-html body main #about-me .about-info-skills .skills-items {
-  display: grid;
-  padding-bottom: 42px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 21px;
-  width: 65%;
-}
-html body main #about-me .about-info-skills .skills-table {
-  display: flex;
-  flex-direction: column;
-}
-html body main #about-me .about-info-skills .skills-table i {
-  font-size: 2.5rem;
-  padding-bottom: 7px;
-  align-self: center;
-  transition-duration: 0.1s;
-}
-html body main #about-me .about-info-skills .skills-table i:hover {
-  color: #fdf3c9;
-}
-html body main #about-me .about-info-skills .skills-table p {
-  font-size: 0.8rem;
-  align-self: center;
-}
-html body main #about-me .about-info-skills .next-skills-items {
-  grid-template-columns: repeat(4, 1fr);
-  display: grid;
-  padding-bottom: 42px;
-  grid-gap: 40px;
-  width: 70%;
-}
-html body main #about-me .info-skills .skills-cards {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  text-align: center;
-  align-items: center;
-  justify-items: stretch;
-  grid-gap: 13px;
-  align-content: center;
-  text-align: center;
-}
-html body main #about-me .info-skills .skills-cards .card {
-  background-color: white;
-  border-radius: 7px;
-  height: 196px;
-  width: 222px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 2px 9px 13px 2px rgba(73, 73, 2, 0.1215686275);
-}
-html body main #about-me .info-skills .skills-cards .card img {
-  width: 85px;
-  padding-bottom: 20px;
-}
-html body main #about-me .info-skills .skills-cards .card h4 {
-  color: #393522;
-  font-weight: 800;
 }
 html body main #about-me img {
   max-width: 352px;
@@ -313,8 +234,9 @@ html body main #about-me #home-resume {
   padding: 11.2px 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
-  background-color: #f5d547;
-  color: white;
+  border-color: #42b2be;
+  background-color: #ffeb94;
+  color: #42b2be;
   text-decoration: none;
   margin-top: 40px;
   text-align: center;
@@ -322,27 +244,49 @@ html body main #about-me #home-resume {
   margin-bottom: 50px;
 }
 html body main #about-me #home-resume:hover {
-  color: #393522;
-  background-color: #fdf3c9;
+  color: white;
+  background-color: #42b2be;
 }
 html body main #projects {
   width: 66vw;
   padding-left: 17vw;
   padding-right: 17vw;
-  padding-bottom: 112px;
+  padding-bottom: 120px;
   background-color: white;
-  -webkit-clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
-          clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+  -webkit-clip-path: polygon(50% 100%, 100% 98%, 100% 0, 0 0, 0 98%);
+          clip-path: polygon(50% 100%, 100% 98%, 100% 0, 0 0, 0 98%);
   display: flex;
   flex-direction: column;
 }
 html body main #projects h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: white;
+  color: #42b2be;
   padding-top: 80px;
-  color: #393522;
+  color: #42b2be;
   padding-bottom: 35px;
+}
+html body main #projects .grid-a {
+  order: -1;
+}
+html body main #projects .grid-b {
+  order: 1;
+}
+html body main #projects .project-a .project-picture img {
+  border-radius: 7px 0px 0px 7px;
+  box-shadow: 2px 9px 13px 2px rgba(73, 73, 2, 0.1215686275);
+}
+html body main #projects .project-a .project-info {
+  border-radius: 0px 7px 7px 0px;
+  box-shadow: 5px 8px 13px 2px rgba(73, 73, 2, 0.1215686275);
+}
+html body main #projects .project-b .project-picture img {
+  border-radius: 0px 7px 7px 0px;
+  box-shadow: 5px 8px 13px 2px rgba(73, 73, 2, 0.1215686275);
+}
+html body main #projects .project-b .project-info {
+  border-radius: 7px 0px 0px 7px;
+  box-shadow: 2px 9px 13px 2px rgba(73, 73, 2, 0.1215686275);
 }
 html body main #projects .project {
   display: grid;
@@ -352,9 +296,9 @@ html body main #projects .project {
 }
 html body main #projects .project .project-picture img {
   width: 100%;
-  height: auto;
-  border-radius: 7px 0px 0px 7px;
-  box-shadow: 2px 9px 13px 2px rgba(73, 73, 2, 0.1215686275);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 html body main #projects .project .project-info {
   display: flex;
@@ -363,14 +307,12 @@ html body main #projects .project .project-info {
   padding-left: 14px;
   padding-right: 14px;
   background-color: #f5f5f5;
-  border-radius: 0px 7px 7px 0px;
-  box-shadow: 5px 8px 13px 2px rgba(73, 73, 2, 0.1215686275);
   padding-top: 11px;
 }
 html body main #projects .project .project-info h4 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: white;
+  color: #42b2be;
   font-size: 1.5rem;
   color: #393522;
 }
@@ -379,12 +321,9 @@ html body main #projects .project .project-info p {
   font-size: 0.9rem;
 }
 html body main #projects .project .project-info p span {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: #f7cf1e;
-          text-decoration-color: #f7cf1e;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: #42b2be;
+  text-decoration-style: wavy;
 }
 html body main #projects .project .project-info .project-tags span {
   margin-right: 16px;
@@ -392,8 +331,8 @@ html body main #projects .project .project-info .project-tags span {
   font-weight: 600;
 }
 html body main #projects .project .project-info .project-tags button:hover {
-  background-color: #ffe573;
-  border-color: #ffe573;
+  background-color: #478a69;
+  border-color: #478a69;
 }
 html body main #projects .project .project-info .project-tags a {
   text-decoration: none;
@@ -407,173 +346,91 @@ html body main #projects .project .project-info .project-tags a i {
   transition-duration: 0.1s;
 }
 html body main #projects .project .project-info .project-tags a i:hover {
-  color: #f7cf1e;
+  color: #ffeb94;
 }
-html body main #other-projects {
+html body main #skills {
+  padding-top: 60px;
   width: 66vw;
   padding-left: 17vw;
   padding-right: 17vw;
-  padding-bottom: 112px;
-  text-align: center;
 }
-html body main #other-projects h2 {
+html body main #skills .info-skills {
+  margin-bottom: 20px;
+}
+html body main #skills .info-skills h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: white;
-  padding-bottom: 55px;
-  padding-top: 80px;
-}
-html body main #other-projects h4 {
-  padding-top: 39px;
+  color: #42b2be;
   padding-bottom: 20px;
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  font-weight: 600;
+}
+html body main #skills .info-skills .skills-cards {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  align-items: center;
+  justify-items: stretch;
+  grid-gap: 13px;
+  align-content: center;
   text-align: center;
 }
-html body main #other-projects p {
-  font-size: 1rem;
-  padding-bottom: 16px;
-  line-height: 1.9rem;
-}
-html body main #other-projects p span {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
-}
-html body main #other-projects p #ay-filmes {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-html body main #other-projects p #ay-filmes:hover {
-  color: #393522;
-}
-html body main #other-projects #portfolio {
-  text-decoration: none;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-  transition-duration: 0.1s;
-}
-html body main #other-projects #portfolio:hover {
-  color: #393522;
-}
-html body main #other-projects #cinema-portfolio-title {
-  margin-top: 64px;
-}
-html body main #other-projects .projects-skills {
-  display: grid;
-  padding-bottom: 42px;
-  grid-template-columns: repeat(3, 1fr);
-  padding-left: 20%;
-  padding-right: 20%;
-}
-html body main #other-projects .projects-skills .cinema-icons {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 19.2px;
-  align-items: center;
-}
-html body main #other-projects .projects-skills .cinema-icons i {
-  align-self: center;
-  font-size: 1.8rem;
-  margin-top: 10px;
-  transition-duration: 0.2s;
-}
-html body main #other-projects .projects-skills .cinema-icons i:hover {
-  color: #fdf3c9;
-}
-html body main #other-projects .projects-skills .cinema-icons p {
-  font-size: 0.8rem;
-}
-html body main #other-projects #cinema-portfolio-title {
-  margin-top: 5rem;
-  font-size: 1.7rem;
-  font-family: "Catamaran", sans-serif;
-  color: white;
-  font-size: 1.7rem;
-  padding-bottom: 24px;
-}
-html body main #other-projects .cinema-projects {
-  display: grid;
-  justify-content: start;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 35px;
-  margin-bottom: 83px;
-}
-html body main #other-projects .cinema-projects .proj-cinema {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 10px;
+html body main #skills .info-skills .skills-cards .card {
   background-color: white;
   border-radius: 7px;
-  box-shadow: 10px 12px 13px 0px rgba(73, 73, 2, 0.1215686275);
+  height: 196px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 9px 13px 2px rgba(73, 73, 2, 0.1215686275);
 }
-html body main #other-projects .cinema-projects .proj-cinema h4 {
-  font-family: "Catamaran", sans-serif;
-  margin-top: 5px;
-  padding-bottom: 32px;
-  text-transform: uppercase;
-  padding-top: 16px;
+html body main #skills .info-skills .skills-cards .card img {
+  width: 85px;
+  padding-bottom: 20px;
 }
-html body main #other-projects .cinema-projects .proj-cinema p {
-  padding-bottom: 0px;
-  font-size: 0.9rem;
+html body main #skills .info-skills .skills-cards .card h4 {
+  color: #393522;
+  font-weight: 800;
 }
-html body main #other-projects .cinema-projects .proj-cinema p span {
-  text-decoration: none;
+html body main #skills .about-info-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding-top: 50px;
+}
+html body main #skills .about-info-skills .about-p {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  transition: color 300ms;
   font-weight: 600;
 }
-html body main #other-projects .cinema-projects .proj-cinema img {
+html body main #skills .about-info-skills .skills-items {
+  display: grid;
+  padding-bottom: 42px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 21px;
   width: 100%;
-  height: auto;
-  opacity: 98%;
+}
+html body main #skills .about-info-skills .skills-table {
+  display: flex;
+  flex-direction: column;
+}
+html body main #skills .about-info-skills .skills-table i {
+  font-size: 2.5rem;
+  padding-bottom: 7px;
   align-self: center;
-  border-radius: 7px 7px 0px 0px;
-  opacity: 97%;
+  transition-duration: 0.1s;
 }
-html body main #other-projects .cinema-projects .proj-cinema .project-buttons,
-html body main #other-projects .cinema-projects .proj-cinema #proj-button {
+html body main #skills .about-info-skills .skills-table i:hover {
+  color: #fdf3c9;
+}
+html body main #skills .about-info-skills .skills-table p {
   font-size: 0.8rem;
-  color: #393522;
-  border: 2.24px solid #fdf3c9;
-  padding: 11.2px 16px;
-  text-transform: uppercase;
-  transition-duration: 0.4s;
-  margin-top: 32px;
-  background-color: white;
-  text-decoration: none;
-  box-shadow: 5px 1px 19px 0px rgba(73, 73, 2, 0.0588235294);
-}
-html body main #other-projects .cinema-projects .proj-cinema #proj-button {
-  cursor: initial;
-}
-html body main #other-projects .cinema-projects .proj-cinema .project-buttons:hover {
-  background-color: #f5d547;
-  border-color: #f5d547;
-  color: #393522;
-}
-html body main #other-projects #portfolio {
-  font-size: 0.8rem;
-  color: #393522;
-  border: 2.24px solid #fdf3c9;
-  padding: 11.2px 16px;
-  text-transform: uppercase;
-  transition-duration: 0.4s;
-  background-color: transparent;
-  color: white;
-}
-html body main #other-projects #portfolio:hover {
-  color: #393522;
-  background-color: #fdf3c9;
+  align-self: center;
 }
 html body main #contacts {
   position: fixed;
@@ -587,7 +444,6 @@ html body main #contacts {
   margin-right: 16px;
   background: -webkit-linear-gradient(283deg, white 65%, #f5f5f5 35%);
   z-index: 10;
-  overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: thin;
 }
@@ -600,7 +456,7 @@ html body main #contacts .contact-close {
 html body main #contacts p {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: white;
+  color: #42b2be;
   color: #393522;
   align-self: center;
   text-align: center;
@@ -661,7 +517,7 @@ html body main #contacts .contact-form #form #email-div input:focus,
 html body main #contacts .contact-form #form #email-div textarea:focus,
 html body main #contacts .contact-form #form #massage-div input:focus,
 html body main #contacts .contact-form #form #massage-div textarea:focus {
-  border: 1px solid #f7cf1e;
+  border: 1px solid #42b2be;
 }
 html body main #contacts .contact-form #form #name-div small,
 html body main #contacts .contact-form #form #email-div small,
@@ -683,9 +539,9 @@ html body main #contacts .contact-form button {
   max-width: 480px;
 }
 html body main #contacts .contact-form button:hover {
-  background-color: #f7cf1e;
+  background-color: #42b2be;
   color: white;
-  border-color: #f7cf1e;
+  border-color: #42b2be;
 }
 html body main #contacts .contact-icons {
   flex-grow: 0.5;
@@ -711,7 +567,7 @@ html body main #contacts .contact-icons ul .icons-contacts a i {
   font-size: 1.5rem;
 }
 html body main #contacts .contact-icons ul .icons-contacts a:hover {
-  color: #f7cf1e;
+  color: #42b2be;
 }
 html body footer {
   background-color: white;
@@ -733,7 +589,7 @@ html body footer .contacts-footer a {
   transition-duration: 0.3s;
 }
 html body footer .contacts-footer a:hover {
-  color: #f7cf1e;
+  color: #ffeb94;
 }
 html body footer .footer-name {
   padding-top: 16px;
@@ -799,6 +655,10 @@ html body .to-top-button {
   html body main .about-info {
     width: 100%;
   }
+  html body main #projects {
+    -webkit-clip-path: polygon(50% 100%, 100% 99%, 100% 0, 0 0, 0 99%) !important;
+            clip-path: polygon(50% 100%, 100% 99%, 100% 0, 0 0, 0 99%) !important;
+  }
 }
 @media screen and (max-width: 540px) {
   html body main #span-1 {
@@ -807,23 +667,21 @@ html body .to-top-button {
   html body main #about-me .about-info {
     width: 100%;
   }
-  html body main #about-me .about-info .skills-items {
-    display: grid;
-    padding-bottom: 42px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 15px;
-  }
-  html body main #about-me .about-info .skills-items .skills-table {
-    padding-bottom: 16px;
-  }
   html body main #about-me img {
     width: 300px;
   }
-  html body main #other-projects .projects-skills {
-    grid-template-columns: repeat(1, 1fr);
-  }
   html body main #contacts #sent-message {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  html body main #skills .about-info-skills .skills-items {
+    padding-bottom: 42px;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 15px;
+  }
+  html body main #skills .about-info-skills .skills-items .skills-table {
+    padding-bottom: 16px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -846,19 +704,6 @@ html body .to-top-button {
     background-color: transparent;
     z-index: 10;
   }
-  html body main #about-me .about-info-skills .about-p {
-    text-align: center;
-  }
-  html body main #about-me .about-info-skills .skills-items, html body main #about-me .about-info-skills .next-skills-items {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  html body main #about-me .info-skills .skills-cards {
-    grid-template-columns: repeat(1, 1fr) !important;
-    grid-gap: 40px;
-  }
-  html body main #about-me .about-img {
-    padding-top: 0;
-  }
   html body main #contacts p {
     font-size: 1.5rem;
   }
@@ -871,6 +716,7 @@ html body .to-top-button {
     display: block;
     font-size: 1.5rem;
     cursor: pointer;
+    color: white;
   }
   html body .main-header .nav-bar ul .navbar-list {
     margin-top: 32px;
@@ -926,7 +772,7 @@ html body .to-top-button {
     color: #393522;
   }
   html body .main-header .menu-mobile .mobile-menu-list ul a:hover {
-    color: #f7cf1e;
+    color: #42b2be;
   }
   html body .main-header .menu-mobile .mobile-menu-icons {
     display: flex;
@@ -956,14 +802,49 @@ html body .to-top-button {
     padding: 12.8px;
   }
   html body .main-header .menu-mobile .mobile-menu-icons ul .navbar-contacts a:hover {
-    color: #f7cf1e;
+    color: #42b2be;
   }
   html body main #about-me {
     -webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
   }
-  html body main #other-projects .cinema-projects {
+  html body main #projects {
+    -webkit-clip-path: polygon(50% 100%, 100% 98%, 100% 0, 0 0, 0 98%);
+            clip-path: polygon(50% 100%, 100% 98%, 100% 0, 0 0, 0 98%);
+  }
+  html body main #projects .project-b .project-picture {
+    order: -1;
+  }
+  html body main #projects .project-b .project-picture img {
+    border-radius: 7px 0px 0px 7px;
+    box-shadow: 2px 9px 13px 2px rgba(73, 73, 2, 0.1215686275);
+  }
+  html body main #projects .project-b .project-info {
+    order: 1;
+    border-radius: 0px 7px 7px 0px;
+    box-shadow: 5px 8px 13px 2px rgba(73, 73, 2, 0.1215686275);
+  }
+  html body main #projects .project {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  html body main #projects .project .project-info {
+    padding-right: 5px;
+    padding-top: 32px;
+    border-radius: 0px 0px 7px 7px;
+  }
+  html body main #projects .project .project-picture img {
+    border-radius: 7px 7px 0px 0px;
+  }
+  html body main #skills .info-skills .skills-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 40px;
+  }
+  html body main #skills .about-info-skills .about-p {
+    text-align: center;
+  }
+  html body main #skills .about-info-skills .skills-items {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 @media screen and (max-width: 1220px) {
@@ -973,7 +854,6 @@ html body .to-top-button {
   html body main #about-me {
     -webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
-    min-height: 1358px;
   }
   html body main #about-me .about-info {
     display: grid;
@@ -990,32 +870,10 @@ html body .to-top-button {
   html body main #about-me .about-info .image .about-img img {
     width: 70%;
   }
-  html body main #about-me .info-skills .skills-cards {
+  html body main #skills .info-skills .skills-cards {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-gap: 25px;
     justify-items: center;
-  }
-  html body main #other-projects .projects-skills {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-@media screen and (max-width: 1282px) {
-  html body main #projects {
-    -webkit-clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 96%);
-            clip-path: polygon(50% 100%, 100% 96%, 100% 0, 0 0, 0 96%);
-  }
-  html body main #projects .project {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  html body main #projects .project .project-info {
-    padding-right: 5px;
-    padding-top: 32px;
-    border-radius: 0px 0px 7px 7px;
-  }
-  html body main #projects .project .project-picture img {
-    border-radius: 7px 7px 0px 0px;
   }
 }
 @media screen and (max-width: 1381px) {
