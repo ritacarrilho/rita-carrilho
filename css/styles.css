@@ -214,7 +214,7 @@ html body main #about-me .about-info .about-p {
 html body main #about-me .about-info .about-p span {
   text-decoration-line: underline;
   text-decoration-color: #42b2be;
-  text-decoration-style: wavy;
+  text-decoration-style: double;
 }
 html body main #about-me .about-info #about-last-p {
   padding-bottom: 64px;
@@ -323,7 +323,7 @@ html body main #projects .project .project-info p {
 html body main #projects .project .project-info p span {
   text-decoration-line: underline;
   text-decoration-color: #42b2be;
-  text-decoration-style: wavy;
+  text-decoration-style: double;
 }
 html body main #projects .project .project-info .project-tags span {
   margin-right: 16px;
