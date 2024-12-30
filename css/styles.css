@@ -6,12 +6,12 @@ html {
 }
 html body {
   font-family: "Raleway", sans-serif;
-  color: #393522;
-  background-color: #42b2be;
+  color: #5d5d5d;
+  background-color: #75cedb;
   box-sizing: border-box;
 }
 html body .main-header {
-  background-color: #42b2be;
+  background-color: #75cedb;
 }
 html body .main-header .nav-bar {
   padding-left: 32px;
@@ -29,8 +29,8 @@ html body .main-header .nav-bar ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #42b2be;
-  color: #393522;
+  background-color: #75cedb;
+  color: #5d5d5d;
   font-size: 1.5rem;
 }
 html body .main-header .nav-bar ul li {
@@ -41,7 +41,7 @@ html body .main-header .nav-bar ul li {
 }
 html body .main-header .nav-bar ul li a {
   text-decoration: none;
-  color: white;
+  color: #f8f9fa;
 }
 html body .main-header .nav-bar .navbar-logo {
   font-family: "Fjalla One", sans-serif;
@@ -78,7 +78,7 @@ html body .main-header .nav-bar .navbar-list .navbar-item-a:before {
 }
 html body .main-header .nav-bar .navbar-list .navbar-item-a:hover::before {
   transform: scale3d(1, 1, 1);
-  background: white;
+  background: #f8f9fa;
   transform-origin: 100% 50%;
   transform-origin: 0 50%;
   transform: scale3d(1, 1, 1);
@@ -94,9 +94,9 @@ html body main #home {
   padding-left: 17vw;
   padding-right: 17vw;
   margin-top: 4.5px;
-  color: #393522;
+  color: #5d5d5d;
   font-size: 1.5rem;
-  background-color: #42b2be;
+  background-color: #75cedb;
   text-align: center;
 }
 html body main #home .home-h1 {
@@ -134,7 +134,7 @@ html body main #home .home-h4 h4 {
   letter-spacing: 0.05em;
   font-size: 1.5rem;
   font-weight: 200;
-  color: #393522;
+  color: #5d5d5d;
 }
 html body main #home .home-p {
   padding-bottom: 26px;
@@ -157,25 +157,25 @@ html body main #home .home-icons ul {
 }
 html body main #home .home-icons ul a {
   padding-right: 16px;
-  color: white;
+  color: #f8f9fa;
   transition-duration: 0.1s;
   font-size: 18px;
 }
 html body main #home .home-icons ul a:hover {
-  color: #ffeb94;
+  color: #ffe6a7;
 }
 html body main #home .home-btn button {
   font-size: 0.8rem;
-  color: #393522;
+  color: #5d5d5d;
   border: 2.24px solid #fdf3c9;
   padding: 11.2px 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
-  background-color: #42b2be;
+  background-color: #75cedb;
   color: #fdf3c9;
 }
 html body main #home .home-btn button:hover {
-  color: #393522;
+  color: #5d5d5d;
   background-color: #fdf3c9;
 }
 html body main #about-me {
@@ -183,7 +183,7 @@ html body main #about-me {
   padding-left: 17vw;
   padding-right: 17vw;
   display: flex;
-  background-color: #ffeb94;
+  background-color: #ffe6a7;
   -webkit-clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
           clip-path: polygon(0 1%, 100% 19%, 100% 100%, 0 100%);
   padding-top: 185px;
@@ -197,7 +197,7 @@ html body main #about-me .about-info {
 html body main #about-me .about-info h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: #42b2be;
+  color: #75cedb;
   padding-bottom: 45px;
 }
 html body main #about-me .about-info .about-info-container i {
@@ -213,7 +213,7 @@ html body main #about-me .about-info .about-p {
 }
 html body main #about-me .about-info .about-p span {
   text-decoration-line: underline;
-  text-decoration-color: #42b2be;
+  text-decoration-color: #75cedb;
   text-decoration-style: double;
 }
 html body main #about-me .about-info #about-last-p {
@@ -229,14 +229,14 @@ html body main #about-me img {
 }
 html body main #about-me #home-resume {
   font-size: 0.8rem;
-  color: #393522;
+  color: #5d5d5d;
   border: 2.24px solid #fdf3c9;
   padding: 11.2px 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
-  border-color: #42b2be;
-  background-color: #ffeb94;
-  color: #42b2be;
+  border-color: #75cedb;
+  background-color: #ffe6a7;
+  color: #75cedb;
   text-decoration: none;
   margin-top: 40px;
   text-align: center;
@@ -244,15 +244,15 @@ html body main #about-me #home-resume {
   margin-bottom: 50px;
 }
 html body main #about-me #home-resume:hover {
-  color: white;
-  background-color: #42b2be;
+  color: #f8f9fa;
+  background-color: #75cedb;
 }
 html body main #projects {
   width: 66vw;
   padding-left: 17vw;
   padding-right: 17vw;
   padding-bottom: 120px;
-  background-color: white;
+  background-color: #f8f9fa;
   -webkit-clip-path: polygon(50% 100%, 100% 98%, 100% 0, 0 0, 0 98%);
           clip-path: polygon(50% 100%, 100% 98%, 100% 0, 0 0, 0 98%);
   display: flex;
@@ -261,9 +261,9 @@ html body main #projects {
 html body main #projects h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: #42b2be;
+  color: #75cedb;
   padding-top: 80px;
-  color: #42b2be;
+  color: #75cedb;
   padding-bottom: 35px;
 }
 html body main #projects .grid-a {
@@ -312,9 +312,9 @@ html body main #projects .project .project-info {
 html body main #projects .project .project-info h4 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: #42b2be;
+  color: #75cedb;
   font-size: 1.5rem;
-  color: #393522;
+  color: #5d5d5d;
 }
 html body main #projects .project .project-info p {
   line-height: 1.9rem;
@@ -322,7 +322,7 @@ html body main #projects .project .project-info p {
 }
 html body main #projects .project .project-info p span {
   text-decoration-line: underline;
-  text-decoration-color: #42b2be;
+  text-decoration-color: #75cedb;
   text-decoration-style: double;
 }
 html body main #projects .project .project-info .project-tags span {
@@ -331,8 +331,8 @@ html body main #projects .project .project-info .project-tags span {
   font-weight: 600;
 }
 html body main #projects .project .project-info .project-tags button:hover {
-  background-color: #478a69;
-  border-color: #478a69;
+  background-color: #5aa9a2;
+  border-color: #5aa9a2;
 }
 html body main #projects .project .project-info .project-tags a {
   text-decoration: none;
@@ -342,11 +342,11 @@ html body main #projects .project .project-info .project-tags a i {
   font-size: 1.2rem;
   padding-bottom: 16px;
   align-self: center;
-  color: #393522;
+  color: #5d5d5d;
   transition-duration: 0.1s;
 }
 html body main #projects .project .project-info .project-tags a i:hover {
-  color: #ffeb94;
+  color: #ffe6a7;
 }
 html body main #skills {
   padding-top: 60px;
@@ -360,7 +360,7 @@ html body main #skills .info-skills {
 html body main #skills .info-skills h2 {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: #42b2be;
+  color: #75cedb;
   padding-bottom: 20px;
 }
 html body main #skills .info-skills .skills-cards {
@@ -392,7 +392,7 @@ html body main #skills .info-skills .skills-cards .card img {
   padding-bottom: 20px;
 }
 html body main #skills .info-skills .skills-cards .card h4 {
-  color: #393522;
+  color: #5d5d5d;
   font-weight: 800;
 }
 html body main #skills .about-info-skills {
@@ -437,12 +437,12 @@ html body main #contacts {
   top: 16px;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #f8f9fa;
   width: calc(100% - 32px);
   height: calc(100% - 32px);
   margin-left: 16px;
   margin-right: 16px;
-  background: -webkit-linear-gradient(283deg, white 65%, #f5f5f5 35%);
+  background: -webkit-linear-gradient(283deg, #f8f9fa 65%, #f5f5f5 35%);
   z-index: 10;
   overflow-x: hidden;
   scrollbar-width: thin;
@@ -456,8 +456,8 @@ html body main #contacts .contact-close {
 html body main #contacts p {
   font-size: 1.7rem;
   font-family: "Catamaran", sans-serif;
-  color: #42b2be;
-  color: #393522;
+  color: #75cedb;
+  color: #5d5d5d;
   align-self: center;
   text-align: center;
   font-size: 2.3rem;
@@ -504,7 +504,7 @@ html body main #contacts .contact-form #form #massage-div textarea {
   padding: 8px;
   background-color: transparent;
   display: block;
-  border: 1px solid #393522;
+  border: 1px solid #5d5d5d;
 }
 html body main #contacts .contact-form #form #name-div textarea,
 html body main #contacts .contact-form #form #email-div textarea,
@@ -517,7 +517,7 @@ html body main #contacts .contact-form #form #email-div input:focus,
 html body main #contacts .contact-form #form #email-div textarea:focus,
 html body main #contacts .contact-form #form #massage-div input:focus,
 html body main #contacts .contact-form #form #massage-div textarea:focus {
-  border: 1px solid #42b2be;
+  border: 1px solid #75cedb;
 }
 html body main #contacts .contact-form #form #name-div small,
 html body main #contacts .contact-form #form #email-div small,
@@ -528,20 +528,20 @@ html body main #contacts .contact-form #form #massage-div small {
 }
 html body main #contacts .contact-form button {
   font-size: 0.8rem;
-  color: #393522;
+  color: #5d5d5d;
   border: 2.24px solid #fdf3c9;
   padding: 11.2px 16px;
   text-transform: uppercase;
   transition-duration: 0.4s;
   background-color: transparent;
-  border-color: #393522;
+  border-color: #5d5d5d;
   align-self: center;
   max-width: 480px;
 }
 html body main #contacts .contact-form button:hover {
-  background-color: #42b2be;
-  color: white;
-  border-color: #42b2be;
+  background-color: #75cedb;
+  color: #f8f9fa;
+  border-color: #75cedb;
 }
 html body main #contacts .contact-icons {
   flex-grow: 0.5;
@@ -558,7 +558,7 @@ html body main #contacts .contact-icons ul {
   display: flex;
 }
 html body main #contacts .contact-icons ul .icons-contacts a {
-  color: #393522;
+  color: #5d5d5d;
   cursor: pointer;
   padding: 12.8px;
   transition-duration: 0.1s;
@@ -567,10 +567,10 @@ html body main #contacts .contact-icons ul .icons-contacts a i {
   font-size: 1.5rem;
 }
 html body main #contacts .contact-icons ul .icons-contacts a:hover {
-  color: #42b2be;
+  color: #75cedb;
 }
 html body footer {
-  background-color: white;
+  background-color: #f8f9fa;
   -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
           clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
   display: flex;
@@ -585,11 +585,11 @@ html body footer .contacts-footer ul {
 html body footer .contacts-footer a {
   padding: 16px;
   font-size: 1.3rem;
-  color: #393522;
+  color: #5d5d5d;
   transition-duration: 0.3s;
 }
 html body footer .contacts-footer a:hover {
-  color: #ffeb94;
+  color: #ffe6a7;
 }
 html body footer .footer-name {
   padding-top: 16px;
@@ -716,7 +716,7 @@ html body .to-top-button {
     display: block;
     font-size: 1.5rem;
     cursor: pointer;
-    color: white;
+    color: #f8f9fa;
   }
   html body .main-header .nav-bar ul .navbar-list {
     margin-top: 32px;
@@ -739,7 +739,7 @@ html body .to-top-button {
     margin-left: 16px;
     margin-right: 16px;
     bottom: calc(90% - 16px);
-    background: -webkit-linear-gradient(283deg, white 65%, #f5f5f5 35%);
+    background: -webkit-linear-gradient(283deg, #f8f9fa 65%, #f5f5f5 35%);
     z-index: 10;
   }
   html body .main-header .menu-mobile .menu-mobile-close {
@@ -764,15 +764,15 @@ html body .to-top-button {
   }
   html body .main-header .menu-mobile .mobile-menu-list ul li {
     font-size: 1.1rem;
-    color: #393522;
+    color: #5d5d5d;
     text-transform: uppercase;
   }
   html body .main-header .menu-mobile .mobile-menu-list ul a {
     text-decoration: none;
-    color: #393522;
+    color: #5d5d5d;
   }
   html body .main-header .menu-mobile .mobile-menu-list ul a:hover {
-    color: #42b2be;
+    color: #75cedb;
   }
   html body .main-header .menu-mobile .mobile-menu-icons {
     display: flex;
@@ -797,12 +797,12 @@ html body .to-top-button {
     text-transform: uppercase;
   }
   html body .main-header .menu-mobile .mobile-menu-icons ul .navbar-contacts a {
-    color: #393522;
+    color: #5d5d5d;
     cursor: pointer;
     padding: 12.8px;
   }
   html body .main-header .menu-mobile .mobile-menu-icons ul .navbar-contacts a:hover {
-    color: #42b2be;
+    color: #75cedb;
   }
   html body main #about-me {
     -webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
