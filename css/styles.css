@@ -195,10 +195,11 @@ html body main #about-me .about-info {
   align-items: center;
 }
 html body main #about-me .about-info h2 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: "Catamaran", sans-serif;
   color: #75cedb;
   padding-bottom: 45px;
+  text-transform: uppercase;
 }
 html body main #about-me .about-info .about-info-container i {
   padding-bottom: 50px;
@@ -259,12 +260,13 @@ html body main #projects {
   flex-direction: column;
 }
 html body main #projects h2 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: "Catamaran", sans-serif;
   color: #75cedb;
   padding-top: 80px;
   color: #75cedb;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
 }
 html body main #projects .grid-a {
   order: -1;
@@ -310,7 +312,7 @@ html body main #projects .project .project-info {
   padding-top: 11px;
 }
 html body main #projects .project .project-info h4 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: "Catamaran", sans-serif;
   color: #75cedb;
   font-size: 1.5rem;
@@ -358,10 +360,11 @@ html body main #skills .info-skills {
   margin-bottom: 20px;
 }
 html body main #skills .info-skills h2 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: "Catamaran", sans-serif;
   color: #75cedb;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 html body main #skills .info-skills .skills-cards {
   margin-top: 30px;
@@ -454,7 +457,7 @@ html body main #contacts .contact-close {
   padding: 16px;
 }
 html body main #contacts p {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: "Catamaran", sans-serif;
   color: #75cedb;
   color: #5d5d5d;
@@ -553,6 +556,7 @@ html body main #contacts .contact-icons {
 html body main #contacts .contact-icons h2 {
   font-size: 1.2rem;
   padding-bottom: 16px;
+  text-transform: uppercase;
 }
 html body main #contacts .contact-icons ul {
   display: flex;

@@ -65,7 +65,7 @@ $text-uppercase: uppercase;
 }
 
 @mixin titles {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: $titles-font;
   color: $dark-yellow;
   // text-transform: uppercase;
@@ -297,6 +297,7 @@ html {
           h2 {
             @include titles();
             padding-bottom: 45px;
+            text-transform: uppercase;
             // text-align: center;
           }
 
@@ -368,7 +369,9 @@ html {
           @include titles();
           padding-top: 80px;
           color: $dark-yellow;
-          padding-bottom: 35px;
+          padding-bottom: 25px;
+        text-transform: uppercase;
+
         }
 
         .grid-a {
@@ -487,6 +490,7 @@ html {
           h2 {
             @include titles();
             padding-bottom: 20px;
+            text-transform: uppercase;
             // text-align: center;
           }
           .skills-cards {
@@ -689,6 +693,7 @@ html {
           h2 {
             font-size: 1.2rem;
             padding-bottom: 16px;
+            text-transform: uppercase;
           }
 
           ul {
